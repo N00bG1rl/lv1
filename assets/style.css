@@ -148,7 +148,7 @@ header .logo-img {
 /* Content info */
 .main-content {
   position: absolute;
-  background: rgba(66, 78, 89, 0.9);
+  background: rgba(66, 78, 89, 0.6);
   border: 2px solid #424E59;
   border-radius: 6px;
   color: #fff;
@@ -182,7 +182,7 @@ header .logo-img {
 .teenused-content {
   width: 500px;
   height: 300px;
-  top: 15%;
+  top: 30%;
   left: 8%;
   display: flex;
   justify-content: center;
@@ -195,27 +195,35 @@ header .logo-img {
 .side-grid {
   position: absolute;
   display: flex;
-  width: 150px;
-  height: 450px;
-  right: 6%;
+  width: 200px;
+  height: 540px;
+  right: 16%;
   top: 20%;
-  background: rgba(66, 78, 89, 0.9);
+/*   background: rgba(66, 78, 89, 0.9); */
 }
 .grid-container {
-  width: 150px;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
   position: relative;
 }
 .grid-item {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 180px;
+  text-align: center;
 }
 .grid-item img {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 170px;
   filter: grayscale(80%);
+  margin-bottom: 10px;
+}
+.grid-item h3 {
+  color: #fff;
+  font-size: 15px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  text-decoration: underline #F28B4F;
+
 }
 .grid-item .item1,
 .grid-item .item2,
@@ -223,20 +231,21 @@ header .logo-img {
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 9;
+  background: rgba(66, 78, 89, 0.6);
+  padding: 10px;
 }
 .grid-item .item1 {
-  top: 20%;
+  top: 15%;
 }
 .grid-item .item2 {
   top: 50%;
 }
 .grid-item .item3 {
   top: 80%;
+/*   right: 0px; */
 }
-.grid-item h3 {
-  color: #fff;
-  font-size: 12px;
-}
+
 /* TEHTUD */
 
 .tehtud-content {
