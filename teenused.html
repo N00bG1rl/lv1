@@ -7,7 +7,8 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/reset.css">
   <link rel="stylesheet" href="assets/style.css">
-  <title>LV Metall - Tehtud Tööd</title>
+  <link rel="stylesheet" href="teenused/assets/style.css">
+  <title>LV Metall - Meie Teenused</title>
 </head>
 <body>
   <header>
@@ -15,28 +16,28 @@
     <nav class="navigation">
       <ul>
         <li><a href="index.html">Pealeht</a></li><!--
-        --><li><a href="teenused.html">Teenused</a></li><!--
+        --><li><a class="current" href="teenused.html">Teenused</a></li><!--
         --><li><a href="tehtud.html">Tehtud tööd</a></li><!--
         --><li><a href="kontakt.html">Kontakt</a></li>
       </ul>
     </nav>
     <!--Right logo-->
-    <img src="assets/lvlogo.png" alt="company logo">
+    <img class="logo-img" src="assets/lvlogo.png" alt="company logo">
   </header>
   <!--Right bottom features info-->
-  <section class="features">
+  <!-- <section class="features">
     <ul>
       <li>Aknad</li>
       <li>Uksed</li>
       <li>Vaheseinad</li>
-      <li>Klaasi müük</li>
-      <li>Klaasfassaadid</li>
       <li>Siseuksed</li>
       <li>Välisuksed</li>
       <li>Talveaiad</li>
-      <li>Terrassi klaasuksed</li>
+      <li>Terrassi klaasid</li>
+      <li>Klaasfassaadid</li>
+      <li>Klaasi müük</li>
     </ul>
-  </section>
+  </section> -->
   <!--Footer contact info-->
   <section class="footer">
     <div class="footer-info">
@@ -53,44 +54,34 @@
     </div>
   </section>
   <!--Content info-->
-  <section class="main-content tehtud-content">
+  <section class="side-grid">
     <section class="grid-container">
       <section class="grid-item">
-        <h3>Uksed, aknad, vaheseinad</h3>
+        <h3 class="item1">Uksed, aknad, vaheseinad</h3>
         <img src="assets/images/teenused/siseuksed.jpeg" alt="klaasist siseuksed">
-        <p>Kirjeldus</p>
       </section>
       <section class="grid-item">
-        <h3>Uksed, aknad, vaheseinad</h3>
+        <h3 class="item2">Välisuksed, talveaiad, terrassi klaasuksed</h3>
+        <img src="assets/images/teenused/talveaiad.jpeg" alt="klaasist siseuksed">
+      </section>
+      <section class="grid-item">
+        <h3 class="item3">Klaasid, Klaasfassaadid, siseuksed</h3>
         <img src="assets/images/teenused/fassaad.jpg" alt="klaasist siseuksed">
-        <p>Kirjeldus</p>
-      </section>
-      <section class="grid-item">
-        <h3>Uksed, aknad, vaheseinad</h3>
-        <img src="assets/images/teenused/talveaiad.jpeg" alt="klaasist siseuksed">
-        <p>Kirjeldus</p>
-      </section>
-      <section class="grid-item">
-        <h3>Uksed, aknad, vaheseinad</h3>
-        <img src="assets/images/teenused/talveaiad.jpeg" alt="klaasist siseuksed">
-        <p>Kirjeldus</p>
-      </section>
-      <section class="grid-item">
-        <h3>Uksed, aknad, vaheseinad</h3>
-        <img src="assets/images/teenused/talveaiad.jpeg" alt="klaasist siseuksed">
-        <p>Kirjeldus</p>
-      </section>
-      <section class="grid-item">
-        <h3>Uksed, aknad, vaheseinad</h3>
-        <img src="assets/images/teenused/talveaiad.jpeg" alt="klaasist siseuksed">
-        <p>Kirjeldus</p>
-      </section>
-      <section class="grid-item">
-        <h3>Uksed, aknad, vaheseinad</h3>
-        <img src="assets/images/teenused/talveaiad.jpeg" alt="klaasist siseuksed">
-        <p>Kirjeldus</p>
       </section>
     </section>
+  </section>
+  <section class="main-content teenused-content">
+    <p>Alumiinium on suurepärane materjal avatäidete valmistamiseks. See ei korrodeeru ja seda on kerge 
+       töödelda, mis teeb konstruktsioonid pikaealiseks ning kergesti hooldatavateks.
+    </p>
+    <p>Erinevalt mitmetest 
+       teistest materjalidest tehakse alumiiniumi pinnatöötlus juba enne profiilide mõõtu lõikamist. See annab 
+      väga hea tulemuse kvaliteedi osas ning tagab alumiiniumist konstruktsioonidele hea väljanägemise pika aja jooksul.
+    </p>
+    <p>Meie poolt kasutatavate profiilide valik on väga lai. Kasutame peamiselt teada-tuntud kvaliteedi ning 
+       innovaatilisuse lipulaeva saksa profiilitootja SCHÜCO toodangut. </br>Samuti suurepärase hinna ja kvaliteedi 
+       suhtega Rootsi tootja SAPA toodangut.
+    </p>
   </section>
 </body>
 </html>

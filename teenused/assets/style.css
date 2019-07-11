@@ -1,0 +1,5 @@
+
+body {
+  background-image: linear-gradient(to top right, rgba(36, 38, 37, .6), rgba(131, 137, 140, .6)),  url("images/teenused-bg.jpeg");
+  background-attachment: fixed;
+}
