@@ -1,0 +1,12 @@
+
+/* TEHTUD */
+
+.tehtud-content {
+  width: 600px;
+  height: 250px;
+  bottom: 15%;
+  left: 15%;
+  display: flex;
+  justify-content: center;
+  overflow: scroll;
+}

@@ -1,0 +1,26 @@
+/* body {
+  background-image: url("lvimg.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+} */
+
+
+/* #OPEN PAGE */
+.open-content {
+  width: 90%;
+  height: 300px;
+  /* left: 20%; */
+  display: block;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 620px) {
+  .open-content {
+    width: 700px;
+    height: 200px;
+    top: 30%;
+    left: 30%;
+  }
+}
