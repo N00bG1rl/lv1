@@ -14,10 +14,12 @@
   <title>LV Metall - Pealeht</title>
 </head>
 <body>
-  <header>
-    <div class="logo-wrapper">
+  <header class="container">
+    <!--Company logo-->
+    <!-- <div class="logo-wrapper"> -->
       <img class="logo-img" src="assets/images/main/lvlogo.png" alt="company logo">
-    </div>
+    <!-- </div> -->
+
     <!--Desktop top navigation-->
     <div class="desktop-nav-wrapper">
       <nav class="desktop-nav">
@@ -28,33 +30,23 @@
           --><li><a href="kontakt.html">Kontakt</a></li>
         </ul>
       </nav>
-      <!--Logo-->
-      <!-- <img class="logo-img" src="assets/images/main/lvlogo.png" alt="company logo"> -->
     </div>
 
     <!--Mobile toggle nav-->
     <div class="mobile-nav-wrapper">
-      <!--Logo-->
-      <div class="open-icon-wrapper" onclick="openNav()">
-        <p>Menu</p>
-        <div class="open-icon">
+      <div class="open-icon" onclick="openNav()">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+          width="50" height="50"
+          viewBox="0 0 172 172"
+          style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><g id="surface1"><path d="M0,25.8v17.2h172v-17.2zM0,77.4v17.2h172v-17.2zM0,129v17.2h172v-17.2z"></path></g></g></g>
+        </svg>
+      </div>
+      <div id="mobile-nav" class="overlay">
+        <div class="close-icon" onclick="closeNav()">
           <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
             width="60" height="60"
             viewBox="0 0 226 226"
-            style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,226v-226h226v226z" fill="none"></path><g fill="#ffffff"><path d="M113,10.68341c-26.21953,0 -52.43906,9.9744 -72.39062,29.92596c-19.42187,19.24531 -30.01562,45.02344 -30.01562,72.39063c0,27.36719 10.59375,53.14531 30.01563,72.39063c19.95156,19.95156 46.25938,30.01563 72.39063,30.01563c26.30781,0 52.43906,-10.06406 72.39063,-30.01562c19.42188,-19.42187 30.01563,-45.02344 30.01563,-72.39062c0,-27.36719 -10.59375,-53.14531 -30.01562,-72.39062c-19.95156,-19.95156 -46.17109,-29.92596 -72.39062,-29.92596zM113,21.1875c23.48281,0 46.967,9.00331 64.97638,26.83612c17.30313,17.47969 26.83612,40.43419 26.83612,64.97638c0,24.54219 -9.533,47.49669 -26.83612,64.97638c-35.84219,35.84219 -94.10781,35.84219 -129.77344,0c-17.47969,-17.47969 -27.01544,-40.43419 -27.01544,-64.97638c0,-24.54219 9.533,-47.49669 26.83612,-64.97638c18.00937,-17.83281 41.49357,-26.83612 64.97638,-26.83612zM121.7626,81.21875c-1.34629,0 -2.67051,0.53038 -3.6416,1.58975c-2.11875,2.11875 -2.11875,5.47206 0,7.41424l17.48038,17.48038h-54.38263c-3.00156,0 -5.29687,2.29531 -5.29687,5.29688c0,3.00156 2.29531,5.29688 5.29688,5.29688h54.38263l-17.48038,17.48038c-2.11875,2.11875 -2.11875,5.47206 0,7.41424c1.05937,1.05937 2.47118,1.58975 3.70712,1.58975c1.23594,0 2.64775,-0.53038 3.70712,-1.58975l26.48437,-26.48437c2.11875,-2.11875 2.11875,-5.47206 0,-7.41424l-26.48437,-26.48437c-1.05937,-1.05938 -2.42635,-1.58975 -3.77264,-1.58975z"></path></g></g>
-          </svg>
-        </div>
-      </div>
-      <div id="mobile-nav" class="overlay">
-        <!--Logo-->
-        <div class="logo-wrapper">
-          <img class="logo-img" src="assets/images/main/lvlogo.png" alt="company logo">
-        </div>
-        <div class="close-icon" onclick="closeNav()">
-          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-            width="64" height="64"
-            viewBox="0 0 172 172"
-            style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M86,8.13074c-19.95469,0 -39.90938,7.59114 -55.09375,22.77551c-14.78125,14.64688 -22.84375,34.26563 -22.84375,55.09375c0,20.82813 8.0625,40.44687 22.84375,55.09375c15.18437,15.18437 35.20625,22.84375 55.09375,22.84375c20.02188,0 39.90937,-7.65938 55.09375,-22.84375c14.78125,-14.78125 22.84375,-34.26562 22.84375,-55.09375c0,-20.82812 -8.0625,-40.44687 -22.84375,-55.09375c-15.18438,-15.18437 -35.13906,-22.77551 -55.09375,-22.77551zM86,16.125c17.87188,0 35.7448,6.85208 49.45105,20.42395c13.16875,13.30312 20.42395,30.77292 20.42395,49.45105c0,18.67813 -7.2552,36.14792 -20.42395,49.45105c-27.27812,27.27812 -71.62187,27.27812 -98.76562,0c-13.30313,-13.30312 -20.56042,-30.77292 -20.56042,-49.45105c0,-18.67812 7.2552,-36.14792 20.42395,-49.45105c13.70625,-13.57187 31.57917,-20.42395 49.45105,-20.42395zM79.23138,61.8125c-1.02461,0 -2.03242,0.40365 -2.77148,1.2099l-20.15625,20.15625c-1.6125,1.6125 -1.6125,4.16457 0,5.6427l20.15625,20.15625c0.80625,0.80625 1.88072,1.2099 2.82135,1.2099c0.94062,0 2.0151,-0.40365 2.82135,-1.2099c1.6125,-1.6125 1.6125,-4.16457 0,-5.6427l-13.30365,-13.30365h41.38855c2.28437,0 4.03125,-1.74688 4.03125,-4.03125c0,-2.28437 -1.74688,-4.03125 -4.03125,-4.03125h-41.38855l13.30365,-13.30365c1.6125,-1.6125 1.6125,-4.16457 0,-5.6427c-0.80625,-0.80625 -1.84661,-1.2099 -2.87121,-1.2099z"></path></g></g>
+            style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,226v-226h226v226z" fill="none"></path><g fill="#ffffff"><path d="M113,10.68341c-26.21953,0 -52.43906,9.9744 -72.39062,29.92596c-19.42187,19.24531 -30.01562,45.02344 -30.01562,72.39063c0,27.36719 10.59375,53.14531 30.01563,72.39063c19.95156,19.95156 46.25938,30.01563 72.39063,30.01563c26.30781,0 52.43906,-10.06406 72.39063,-30.01562c19.42188,-19.42187 30.01563,-45.02344 30.01563,-72.39062c0,-27.36719 -10.59375,-53.14531 -30.01562,-72.39062c-19.95156,-19.95156 -46.17109,-29.92596 -72.39062,-29.92596zM113,21.1875c23.48281,0 46.967,9.00331 64.97638,26.83612c17.30313,17.47969 26.83612,40.43419 26.83612,64.97638c0,24.54219 -9.533,47.49669 -26.83612,64.97638c-35.84219,35.84219 -94.10781,35.84219 -129.77344,0c-17.47969,-17.47969 -27.01544,-40.43419 -27.01544,-64.97638c0,-24.54219 9.533,-47.49669 26.83612,-64.97638c18.00937,-17.83281 41.49357,-26.83612 64.97638,-26.83612zM104.10635,81.21875c-1.34629,0 -2.67051,0.53038 -3.6416,1.58975l-26.48437,26.48438c-2.11875,2.11875 -2.11875,5.47206 0,7.41424l26.48438,26.48437c1.05938,1.05937 2.47118,1.58975 3.70712,1.58975c1.23594,0 2.64775,-0.53038 3.70712,-1.58975c2.11875,-2.11875 2.11875,-5.47206 0,-7.41424l-17.48038,-17.48038h54.38263c3.00156,0 5.29688,-2.29531 5.29688,-5.29687c0,-3.00156 -2.29531,-5.29687 -5.29687,-5.29687h-54.38263l17.48038,-17.48038c2.11875,-2.11875 2.11875,-5.47206 0,-7.41424c-1.05938,-1.05938 -2.42635,-1.58975 -3.77264,-1.58975z"></path></g></g>
           </svg>
         </div>
         <nav class="overlay-nav">
@@ -67,49 +59,80 @@
         </nav>
       </div>
     </div>
-
   </header>
 
   <!--Content info-->
-  <section class="main-content open-content">
-    <p>Oleme ettevõte, mis spetsialiseerub eritellimusel <span>alumiiniumist</span> </br> akende,
-        lükanduste ning <span>alumiiniumprofiilidest klaasfassaadide</span> tootmisele. </br>
-        Meie meeskond koosneb eranditult laialdaste
-        kogemustega spetsialistidest ning kvaliteedis järeleandmisi ei tehta.
-    </p>
+  <section class="main container">
+    <section class="main-content">
+      <p>Oleme ettevõte, mis spetsialiseerub eritellimusel <a href="teenused.html"><span>alumiiniumist</span></a> </br> akende,
+          lükanduste ning <a href="teenused.html"><span>alumiiniumprofiilidest klaasfassaadide</span></a> tootmisele. </br>
+          Meie meeskond koosneb eranditult laialdaste
+          kogemustega spetsialistidest ning kvaliteedis järeleandmisi ei tehta.
+      </p>
+    </section>
+  </section>
+
+  <!--Content info-->
+  <section class="grid-container container">
+    <section class="grid">
+      <section class="grid-item">
+        <img src="assets/images/index/180x150.png" alt="klaasist siseuksed">
+      </section>
+      <section class="grid-item">
+        <img src="assets/images/index/180x150.png" alt="klaasist siseuksed">
+      </section>
+      <section class="grid-item">
+        <img src="assets/images/index/180x150.png" alt="klaasist siseuksed"> 
+      </section>
+    </section>
   </section>
 
   <!--Right bottom features info-->
-  <section class="features">
-    <ul>
-      <li>Aknad</li>
-      <li>Uksed</li>
-      <li>Vaheseinad</li>
-      <li>Siseuksed</li>
-      <li>Välisuksed</li>
-      <li>Talveaiad</li>
-      <li>Terrassi klaasid</li>
-      <li>Klaasfassaadid</li>
-      <li>Klaasi müük</li>
-    </ul>
-  </section>
-
-  <!--Footer contact info-->
-  <section class="footer row">
-    <div class="footer-info col-3">
-      <h3>E-post:</h3>
-      <p>info@lvmetall.ee</p>
-    </div>
-    <div class="footer-info col-3">
-      <h3>Telefon:</h3>
-      <p>+372 520 6135</p>
-    </div>
-    <div class="media col-6">
-      <img src="assets/images/main/fb.png" alt="facebook logo">
-    </div>
-    <div class="media col-6">
-      <img src="assets/images/main/insta.png" alt="instagram logo">
-    </div>
+  <section class="footer-container container">
+    <section class="features">
+      <ul>
+        <li><a href="teenused.html">Aknad</a></li>
+        <li><a href="teenused.html">Siseuksed</a></li>
+        <li><a href="teenused.html">Välisuksed</a></li>
+        <li><a href="teenused.html">Vaheseinad</a></li>
+        <li><a href="teenused.html">Talveaiad</a></li>
+        <li><a href="teenused.html">Terrassi klaasid</a></li>
+        <li><a href="teenused.html">Klaasfassaadid</a></li>
+        <li><a href="teenused.html">Klaasi müük</a></li>
+        <li>
+          <a href="teenused.html">
+            <span>Rohkem</span>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+              width="48" height="48"
+              viewBox="0 0 226 226"
+              style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,226v-226h226v226z" fill="none"></path><g><path d="M207.16667,113c0,51.99883 -42.16783,94.16667 -94.16667,94.16667c-51.99883,0 -94.16667,-42.16783 -94.16667,-94.16667c0,-51.99883 42.16783,-94.16667 94.16667,-94.16667c51.99883,0 94.16667,42.16783 94.16667,94.16667z" fill="#eb5936"></path><path d="M99.35525,165.27192l-14.60525,-14.60525l37.18642,-37.18642l-37.18642,-37.20996l14.60525,-14.58642l51.31142,51.79167z" fill="#ffffff"></path></g></g>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </section>
+  
+    <!--Footer contact info-->
+    <section class="footer row">
+      <div class="footer-info col-3">
+        <h3>E-post:</h3>
+        <p>info@lvmetall.ee</p>
+      </div>
+      <div class="footer-info col-3">
+        <h3>Telefon:</h3>
+        <p>+372 520 6135</p>
+      </div>
+      <div class="media col-6">
+        <a href="#">
+          <img src="assets/images/main/fb.png" alt="facebook logo">
+        </a>
+      </div>
+      <div class="media col-6">
+        <a href="#">
+          <img src="assets/images/main/insta.png" alt="instagram logo">
+        </a>
+      </div>
+    </section>
   </section>
 
   <script src="assets/main.js"></script>

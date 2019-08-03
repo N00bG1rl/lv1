@@ -8,19 +8,41 @@
 } */
 
 
-/* #OPEN PAGE */
-.open-content {
-  width: 90%;
-  height: 300px;
-  /* left: 20%; */
-  display: block;
-  margin: 0 auto;
+/* #Index */
+.main {
+  margin-top: 100px;
+}
+.main-content {
+  position: relative;
+  width: 80%;
+  height: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
 }
 @media only screen and (min-width: 620px) {
-  .open-content {
+  .main-content {
     width: 700px;
     height: 200px;
-    top: 30%;
     left: 30%;
+    transform: none;
   }
+}
+
+/* Portfolio preview, grid */ 
+.grid-container {
+  margin-top: 100px;
+}
+.grid {
+  display: flex;
+  position: relative;
+  width: 600px;
+  margin: 50px;
+}
+.grid-item {
+  text-align: center;
+  filter: grayscale(80%);
+  padding: 10px;
 }

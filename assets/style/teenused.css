@@ -1,11 +1,12 @@
 
-body {
+/* body {
   background-image: linear-gradient(to top right, rgba(36, 38, 37, .6), rgba(131, 137, 140, .6)),  url("images/teenused-bg.jpeg");
   background-attachment: fixed;
-}
+} */
 
 /* #TEENUSED */
 .teenused-content {
+  position: absolute;
   width: 500px;
   height: 300px;
   top: 30%;
@@ -18,7 +19,7 @@ body {
   font-size: 16px;
   line-height: 1.3em;
 }
-.side-grid {
+.grid {
   position: absolute;
   display: flex;
   width: 200px;

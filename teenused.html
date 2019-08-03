@@ -1,69 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style/reset.css">
-  <link rel="stylesheet" href="assets/style/main.css">
-  <link rel="stylesheet" href="assets/style/teenused.css">
-  <title>LV Metall - Meie Teenused</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" href="assets/style/reset.css">
+    <link rel="stylesheet" href="assets/style/main.css">
+    <link rel="stylesheet" href="assets/style/teenused.css">
+  
+    <title>LV Metall - Pealeht</title>
+  </head>
 <body>
   <header>
-    <!--Top navigation-->
-    <nav class="navigation">
-      <ul>
-        <li><a href="index.html">Pealeht</a></li><!--
-        --><li><a class="current" href="teenused.html">Teenused</a></li><!--
-        --><li><a href="tehtud.html">Tehtud tööd</a></li><!--
-        --><li><a href="kontakt.html">Kontakt</a></li>
-      </ul>
-    </nav>
-    <!--Right logo-->
-    <img class="logo-img" src="assets/images/main/lvlogo.png" alt="company logo">
+    <div class="logo-wrapper">
+      <img class="logo-img" src="assets/images/main/lvlogo.png" alt="company logo">
+    </div>
+    <!--Desktop top navigation-->
+    <div class="desktop-nav-wrapper">
+      <nav class="desktop-nav">
+        <ul>
+          <li><a href="index.html">Pealeht</a></li><!--
+          --><li><a class="current" href="teenused.html">Teenused</a></li><!--
+          --><li><a href="tehtud.html">Tehtud tööd</a></li><!--
+          --><li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <!--Logo-->
+      <!-- <img class="logo-img" src="assets/images/main/lvlogo.png" alt="company logo"> -->
+    </div>
+
+    <!--Mobile toggle nav-->
+    <div class="mobile-nav-wrapper">
+      <!--Logo-->
+      <div class="open-icon-wrapper" onclick="openNav()">
+        <p>Menu</p>
+        <div class="open-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            width="50" height="50"
+            viewBox="0 0 172 172"
+            style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><g id="surface1"><path d="M0,25.8v17.2h172v-17.2zM0,77.4v17.2h172v-17.2zM0,129v17.2h172v-17.2z"></path></g></g></g>
+          </svg>
+        </div>
+      </div>
+      <div id="mobile-nav" class="overlay">
+        <!--Logo-->
+        <div class="logo-wrapper">
+          <img class="logo-img" src="assets/images/main/lvlogo.png" alt="company logo">
+        </div>
+        <div class="close-icon" onclick="closeNav()">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            width="50" height="50"
+            viewBox="0 0 172 172"
+            style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><g id="surface1"><path d="M86,6.88c-43.65844,0 -79.12,35.46156 -79.12,79.12c0,43.65844 35.46156,79.12 79.12,79.12c43.65844,0 79.12,-35.46156 79.12,-79.12c0,-43.65844 -35.46156,-79.12 -79.12,-79.12zM86,13.76c39.93625,0 72.24,32.30375 72.24,72.24c0,39.93625 -32.30375,72.24 -72.24,72.24c-39.93625,0 -72.24,-32.30375 -72.24,-72.24c0,-39.93625 32.30375,-72.24 72.24,-72.24zM59.555,51.4925l22.79,33.755l-23.005,34.185h10.32l17.63,-26.23h0.7525l17.415,26.23h10.965l-22.8975,-33.8625l23.435,-34.0775h-10.535l-17.63,26.5525h-0.86l-17.2,-26.5525z"></path></g></g></g>
+          </svg>
+        </div>
+        <nav class="overlay-nav">
+          <ul>
+            <li><a href="index.html">Pealeht</a></li><!--
+            --><li><a class="current" href="teenused.html">Teenused</a></li><!--
+            --><li><a href="tehtud.html">Tehtud tööd</a></li><!--
+            --><li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
-  <!--Right bottom features info-->
-  <!-- <section class="features">
-    <ul>
-      <li>Aknad</li>
-      <li>Uksed</li>
-      <li>Vaheseinad</li>
-      <li>Siseuksed</li>
-      <li>Välisuksed</li>
-      <li>Talveaiad</li>
-      <li>Terrassi klaasid</li>
-      <li>Klaasfassaadid</li>
-      <li>Klaasi müük</li>
-    </ul>
-  </section> -->
+
   <!--"Teenused" header-->
   <section class="header-txt">
     <p>Valmistame klaas-alumiinium avatäiteid. fassaadid, uksed, aknad, lükanduksed, voldikuksed, tuletõkke avatäiteid.</p>
   </section>
 
-  <!--Main "teenused" content-->
-  <section class="main-content teenused-content">
-    <p>Alumiinium on suurepärane materjal avatäidete valmistamiseks. See ei korrodeeru ja seda on kerge 
-       töödelda, mis teeb konstruktsioonid pikaealiseks ning kergesti hooldatavateks.
-    </p>
-    <p>Erinevalt mitmetest 
-       teistest materjalidest tehakse alumiiniumi pinnatöötlus juba enne profiilide mõõtu lõikamist. See annab 
-       väga hea tulemuse kvaliteedi osas ning tagab alumiiniumist konstruktsioonidele hea väljanägemise pika aja jooksul.
-    </p>
-    <p>Meie poolt kasutatavate profiilide valik on väga lai. Kasutame peamiselt teada-tuntud kvaliteedi ning 
-       innovaatilisuse lipulaeva saksa profiilitootja SCHÜCO toodangut. </br>Samuti suurepärase hinna ja kvaliteedi 
-       suhtega Rootsi tootja SAPA toodangut.
-    </p>
-  </section>
-  
   <!--Content info-->
-  <section class="side-grid">
+  <section class="grid">
     <section class="grid-container">
       <section class="grid-item">
         <div class="item1">
-          <h3>Uksed</h3>
+          <h3>Siseuksed</h3>
           <h3>Aknad</h3>
           <h3>Vaheseinad</h3>
         </div>
@@ -81,12 +97,28 @@
         <div class="item3">
           <h3>Klaasid</h3>
           <h3>Klaasfassaadid</h3>
-          <h3>Siseuksed</h3>
         </div>
         <img src="assets/images/teenused/fassaad.jpg" alt="klaasist siseuksed"> 
       </section>
     </section>
   </section>
+
+  <!--Main "teenused" content-->
+  <section class="main-content teenused-content">
+    <p>Alumiinium on suurepärane materjal avatäidete valmistamiseks. See ei korrodeeru ja seda on kerge 
+       töödelda, mis teeb konstruktsioonid pikaealiseks ning kergesti hooldatavateks.
+    </p>
+    <p>Erinevalt mitmetest 
+       teistest materjalidest tehakse alumiiniumi pinnatöötlus juba enne profiilide mõõtu lõikamist. See annab 
+       väga hea tulemuse kvaliteedi osas ning tagab alumiiniumist konstruktsioonidele hea väljanägemise pika aja jooksul.
+    </p>
+    <p>Meie poolt kasutatavate profiilide valik on väga lai. Kasutame peamiselt teada-tuntud kvaliteedi ning 
+       innovaatilisuse lipulaeva saksa profiilitootja SCHÜCO toodangut. </br>Samuti suurepärase hinna ja kvaliteedi 
+       suhtega Rootsi tootja SAPA toodangut.
+    </p>
+  </section>
+  
+  
 
   <!--Footer contact info-->
   <section class="footer">
