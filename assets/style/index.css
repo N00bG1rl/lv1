@@ -9,9 +9,9 @@
 
 
 /* #Index */
-.main {
-  margin-top: 100px;
-}
+/* .main {
+  margin-top: 25px;
+} */
 .main-content {
   position: relative;
   width: 80%;
@@ -23,6 +23,9 @@
   -webkit-transform: translateX(-50%);
 }
 @media only screen and (min-width: 620px) {
+  .main {
+    margin-top: 100px;
+  }
   .main-content {
     width: 700px;
     height: 200px;
@@ -31,12 +34,14 @@
   }
 }
 
-/* Portfolio preview, grid */ 
+/* Portfolio preview, grid */
+
 .grid-container {
-  margin-top: 100px;
+  margin: 50px;
 }
 .grid {
   display: flex;
+  flex-direction: column;
   position: relative;
   width: 600px;
   margin: 50px;
@@ -44,5 +49,32 @@
 .grid-item {
   text-align: center;
   filter: grayscale(80%);
-  padding: 10px;
+  padding: 2px;
+  width: 124px;
+  height: 95px;
+}
+.more-items a img {
+  background-color: #fff;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+.more-items a p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: #fff;
+  font-size: 20px;
+  padding-right: 7px;
+  z-index: 1;
+}
+
+@media only screen and (min-width: 620px) {
+  .grid-container {
+    margin-top: 100px;
+  }
+  .grid {
+    flex-direction: row;
+  }
 }
