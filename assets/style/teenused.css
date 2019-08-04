@@ -6,28 +6,12 @@
 
 /* #TEENUSED */
 
-.header
-
-
-.teenused-content {
-  position: absolute;
-  width: 500px;
-  height: 300px;
-  top: 30%;
-  left: 8%;
-
-  display: flex;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: -moz-box;
-  justify-content: center;
-
+.main-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 25px;
+  display: block;
 }
-.teenused-content p {
-  font-size: 16px;
-  line-height: 1.3em;
-}
-
 
 .grid-container {
   height: 800px;

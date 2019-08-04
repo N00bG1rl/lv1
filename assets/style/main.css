@@ -28,7 +28,7 @@ body {
 .desktop-nav, header img, .features,
 .footer-info h3, .media img,
 .main-content, header.logo-img,
-.mobile-nav-wrapper {
+.mobile-nav-wrapper, .over-image-txt {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
@@ -63,7 +63,7 @@ body {
 
 /* Top navigation */
 header {
-  height: 100px;
+  height: 70px;
 }
 .desktop-nav-wrapper {
   display: none;
