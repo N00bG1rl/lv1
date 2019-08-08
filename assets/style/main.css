@@ -16,7 +16,6 @@ body {
   line-height: 1.5;
   color: #fff;
   -moz-osx-font-smoothing: grayscale;
-  overflow-wrap: break-word;
   word-wrap: wrap;
 }
 html,
@@ -270,15 +269,17 @@ header {
   position: fixed;
   bottom: 0;
 
+  background: rgba(66, 78, 89, 0.9);
+  border: 2px solid #424E59;
+  border-radius: 6px;
+  font-family: "Helvetica", "sans-serif";
+  font-size: 0;
+
   display: flex;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: -moz-box;
   justify-content: center;
-
-  background: rgba(0, 0, 0, 0.5);
-  font-family: "Helvetica", "sans-serif";
-  font-size: 0;
 }
 .footer div {
   display: inline-block;
@@ -324,7 +325,7 @@ header {
 }
 @media only screen and (min-width: 620px) {
   .footer {
-    width: 400px;
+    width: 380px;
     margin: 25px;
   }
   .footer div {
