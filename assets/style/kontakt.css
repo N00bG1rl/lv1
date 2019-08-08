@@ -1,0 +1,29 @@
+form {
+  position: relative;
+  width: 740px;
+  height: 498px;
+  margin: 0 auto;
+}
+fieldset {
+  width: 60px;
+}
+input {
+  width: 100%;
+  font-size: 15px;
+  margin: 10px;
+}
+input {
+  border: none;
+  background: none;
+  padding: 0 10px;
+  color: #fff;
+}
+.underlined-txt {
+  border-bottom: 2px solid #fff;
+}
+textarea {
+  border: 1px solid #fff;
+  color: #fff;
+  background: none;
+  margin: 10px;
+}
