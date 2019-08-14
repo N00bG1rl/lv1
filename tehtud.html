@@ -14,7 +14,7 @@
         <title>LV Metall - Tehtud tööd</title>
       </head>
 <body>
-  <header class="container">
+  <header>
   <!--Company logo-->
     <!-- <div class="logo-wrapper"> -->
       <img class="logo-img" src="assets/images/main/lvlogo.png" alt="company logo">
@@ -63,46 +63,42 @@
 
   <!-- Content info; tehtud-content = tehtud.css -->
   <section class="container">
+    <div class="list-container">
+      <ul id="list-container">
+        <li class="list active" onclick="filterSelection('all')">Kōik</li>
+        <li class="list" onclick="filterSelection('aknad')">Aknad</li>
+        <li class="list" onclick="filterSelection('uksed')">Uksed</li>
+        <li class="list" onclick="filterSelection('all')">Vaheseinad</li>
+        <li class="list" onclick="filterSelection('all')">Talveaiad</li>
+        <li class="list" onclick="filterSelection('all')">Klaasfassaadid</li>
+        <!-- <li class="list" onclick="filterSelection('all')">Kōik</li>
+        <li class="list" onclick="filterSelection('all')">Kōik</li> -->
+      </ul>
+    </div>
     <section class="grid-container">
-      <section class="grid-item">
-        <h3>Uksed, aknad, vaheseinad</h3>
+      <section class="grid-item aknad">
         <img src="assets/images/tehtud/300x250.png" alt="klaasist siseuksed">
-        <p>Kirjeldus</p>
+      </section>
+      <section class="grid-item uksed">
+        <img src="assets/images/tehtud/300x250.png" alt="klaasist siseuksed">
       </section>
       <section class="grid-item">
-        <h3>Uksed, aknad, vaheseinad</h3>
         <img src="assets/images/tehtud/300x250.png" alt="klaasist siseuksed">
-        <p>Kirjeldus</p>
       </section>
       <section class="grid-item">
-        <h3>Uksed, aknad, vaheseinad</h3>
         <img src="assets/images/tehtud/300x250.png" alt="klaasist siseuksed">
-        <p>Kirjeldus</p>
       </section>
       <section class="grid-item">
-        <h3>Uksed, aknad, vaheseinad</h3>
         <img src="assets/images/tehtud/300x250.png" alt="klaasist siseuksed">
-        <p>Kirjeldus</p>
       </section>
       <section class="grid-item">
-        <h3>Uksed, aknad, vaheseinad</h3>
         <img src="assets/images/tehtud/300x250.png" alt="klaasist siseuksed">
-        <p>Kirjeldus</p>
       </section>
       <section class="grid-item">
-        <h3>Uksed, aknad, vaheseinad</h3>
         <img src="assets/images/tehtud/300x250.png" alt="klaasist siseuksed">
-        <p>Kirjeldus</p>
       </section>
       <section class="grid-item">
-        <h3>Uksed, aknad, vaheseinad</h3>
         <img src="assets/images/tehtud/300x250.png" alt="klaasist siseuksed">
-        <p>Kirjeldus</p>
-      </section>
-      <section class="grid-item">
-        <h3>Uksed, aknad, vaheseinad</h3>
-        <img src="assets/images/tehtud/300x250.png" alt="klaasist siseuksed">
-        <p>Kirjeldus</p>
       </section>
     </section>
   </section>

@@ -37,7 +37,7 @@ body {
 .container {
   /* width: 100%; */
   display: block;
-  margin: 25px;
+  margin: 75px 25px;
 }
 * a {
   text-decoration: none;
@@ -63,6 +63,7 @@ body {
 /* Top navigation */
 header {
   height: 70px;
+  margin: 25px;
 }
 .desktop-nav-wrapper {
   display: none;
@@ -71,9 +72,9 @@ header {
   /* background-color: #fff; */
   /* margin-left: 30px;
   margin-top: 30px; */
-  width: 415px;
+ /*  width: 500px;
   height: 60px;
-  float: left;
+  float: left; */
 }
 .desktop-nav ul {
   font: bold 11px "Helvetica", "sans-serif";
@@ -122,6 +123,7 @@ header {
 .overlay-nav {
   width: 200px;
   height: 300px;
+
   position: absolute;
   top: 50%;
   left: 50%;
@@ -130,9 +132,9 @@ header {
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 
   /* background-color: #EB5936; */
 }
@@ -150,7 +152,10 @@ header {
   font-size: 20px;
 }
 .overlay-nav a:hover {
-  color: #F28B4F;
+  color: #EB5936;
+}
+.overlay-nav .current {
+  color: #EB5936;
 }
 .open-icon,
 .close-icon {
@@ -179,7 +184,7 @@ header {
   font-family: 'Open Sans', 'sans-serif';
 }
 .main-content p {
-  font-size: 15px;
+  font-size: 13px;
   line-height: 1.4em;
   padding: 5px;
   text-align: center;
@@ -194,7 +199,7 @@ header {
 }
 @media only screen and (min-width: 620px) {
   .main-content p {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 

@@ -14,7 +14,8 @@
 }
 
 .grid-container {
-  height: 800px;
+  /* height: 800px; */
+  /* margin-bottom: 400px; */
   /* background: rgba(66, 78, 89, 0.9); */
 
   display: flex;
@@ -40,11 +41,18 @@
   min-width: 200px;
   max-width: 1200px;
   text-align: center;
-  padding: 20px;
+  margin: 25px;
+  padding: 12px;
+
+  background: rgba(66, 78, 89, 0.6);
+  border: 2px solid #424E59;
+  border-radius: 6px;
+  color: #fff;
+
   flex-direction: column;
 }
 .image-item {
-  height: 300px;
+  height: 200px;
   position: relative;
   text-align: center;
   color: #fff;
@@ -80,8 +88,7 @@
 
 @media only screen and (min-width: 620px) {
   .grid-item {
-    width: 50%;
-    
+    width: 43%;
     min-width: 250px;
   }
 }

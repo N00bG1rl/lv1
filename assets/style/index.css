@@ -44,13 +44,13 @@
 
 /* Portfolio preview, grid */
 
-/* .grid-container {
-  margin: 50px;
-  width: 80%;
-} */
+.grid-container {
+  margin: 25px 25px 100px 25px;
+}
 .grid {
   margin: 50px;
   position: relative;
+  /* width: 200px; */
 
   display: flex;
   display: -webkit-flex;
@@ -90,19 +90,21 @@
 }
 
 @media only screen and (min-width: 620px) {
-  
+  .grid-container {margin: 25px;}
+  .grid {width: 200px;}
 }
 @media only screen and (min-width: 768px) {
   .grid-container {
     margin-top: 100px;
   }
   .grid {
-    /* width: 600px; */
+    width: 500px;
     flex-direction: row;
     -webkit-flex-direction: row;
   }
 }
 @media only screen and (min-width: 992px) {
+  .grid {width: 600px;}
   .grid-item img {
     width: 184px;
     height: 155px;

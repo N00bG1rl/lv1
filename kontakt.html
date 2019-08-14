@@ -14,7 +14,7 @@
   <title>LV Metall - Pealeht</title>
 </head>
 <body>
-  <header class="container">
+  <header>
     <!--Company logo-->
     <!-- <div class="logo-wrapper"> -->
       <img class="logo-img" src="assets/images/main/lvlogo.png" alt="company logo">
@@ -64,19 +64,57 @@
   <section class="container">
     <section class="main-content">
       <p>Alumiiniumprofiilide võimalused on piiramatult suured ning koostöös tellijaga leiame lahendused, mis on parimad nii kvaliteedi, tootmiskiiruse, kui hinna poolest.</p>
-      
+      <p>Vōta ühendust...</p>
     </section>
   </section>
 
-  <form>
-      <p>Kirjuta meile:</p>
-    <fieldset>
-      <input type="text" class="underlined-txt" id="name" name="name" placeholder="Nimi">
-      <input type="text" class="underlined-txt" id="mail" name="mail" placeholder="E-post">
-      <textarea name="message"></textarea>
-    </fieldset>
-    <input type="submit" name="submit" value="Saada">
-  </form>
+  <section class="container">
+    <div class="form-container">
+      <form class="form  col-2-3" action="" method="post">
+        <label for="field1">
+          <span>Sinu nimi</span><input type="text" name="field1" required="true" />
+        </label>
+        <label for="field2">
+          <span>E-posti aadress</span><input type="email" name="field2" required="true" />
+        </label>
+        <label for="field3">
+          <span>Pealkiri</span><input type="text" name="field3" required="true" />
+        </label>
+        <label for="field4">
+          <span>Sõnum (500 tähemärki)</span><textarea name="field4" onkeyup="adjust_textarea(this)" required="true"></textarea>
+        </label>
+        <label class="submit-btn">
+          <span> </span><input type="submit" value="Saada" />
+        </label>
+      </form>
+      
+      <div class="contact-info col-1-3">
+        <div class="address">
+          <h3>Aadress</h3>
+          <p>Jänesselja 22</p>
+          <p>Sauga</p>
+          <p>85008, Pärnu maakond</p>
+        </div>
+        <div class="tel">
+          <h3>Telefon</h3>
+          <p>+372 520 6135</p>
+        </div>
+        <div class="e-mail">
+          <h3>E-post</h3>
+          <p>info@lvmetall.ee</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="map-container container">
+    
+    <div class="map col-2-3">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2088.6751381232684!2d24.495277716188124!3d58.432592781354074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ece2a2148e08af%3A0x7ce64063a4c66b4!2sLV+Metall+O%C3%9C!5e0!3m2!1set!2see!4v1565686256454!5m2!1set!2see" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  
 
   <!--Right bottom features info-->
   <!-- <section class="features">

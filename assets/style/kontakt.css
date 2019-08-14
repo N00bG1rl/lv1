@@ -1,29 +1,176 @@
-form {
+.main-content {
+  max-width: 600px;
+}
+
+.contact-info div {
+  padding: 10px;
+}
+.contact-info h3 {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.contact-info p {
+  font-size: 12px;
+}
+
+.form-container {
+  max-width: 900px;
+  height: 260px;
+
   position: relative;
-  width: 740px;
-  height: 498px;
-  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
 }
-fieldset {
-  width: 60px;
-}
-input {
+.form {
+  /* width: 250px; */
   width: 100%;
-  font-size: 15px;
-  margin: 10px;
+	font-size: 16px;
+	background: rgba(66, 78, 89, 0.6);
+  border: 2px solid #424E59;
+  border-radius: 6px;
+	padding: 12px;
+
+  float: right;
 }
-input {
+.main-content
+ {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+.form input[type=submit],
+.form input[type=button],
+.form input[type=text],
+.form input[type=email],
+.form textarea,
+.form label
+{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 16px;
+	color: #fff;
+
+}
+.form label {
+	display:block;
+	margin-bottom: 12px;
+}
+
+.form label > span{
+	display: inline-block;
+	float: left;
+  width: 150px;
+  margin-bottom: 12px;
+}
+.form input[type=text],
+.form input[type=email]
+{
+	background: transparent;
+	border: none;
+	border-bottom: 1px dashed #83A4C5;
+	width: 222px;
+	outline: none;
+	padding: 0px 0px 0px 0px;
+	font-style: italic;
+}
+.form textarea {
+	font-style: italic;
+	padding: 0px 0px 0px 0px;
+	background: transparent;
+	outline: none;
+	border: none;
+	border-bottom: 1px dashed #83A4C5;
+  width: 222px;
+  height: 20px;
+	overflow: hidden;
+	resize:none;
+}
+.submit-btn {
+  width: 80px;
+}
+.form textarea:focus, 
+.form input[type=text]:focus,
+.form input[type=email]:focus,
+.form input[type=email] :focus
+{
+	border-bottom: 1px dashed #D9FFA9;
+}
+.form input[type=submit],
+.form input[type=button]{
+	background: #576E86;
   border: none;
-  background: none;
-  padding: 0 10px;
-  color: #fff;
+  width: 60px;
+	padding: 8px 10px 8px 10px;
+	border-radius: 5px;
+	color: #A8BACE;
 }
-.underlined-txt {
-  border-bottom: 2px solid #fff;
+.form input[type=submit]:hover,
+.form input[type=button]:hover{
+background: #394D61;
 }
-textarea {
-  border: 1px solid #fff;
-  color: #fff;
-  background: none;
-  margin: 10px;
+@media only screen and (min-width: 620px) {
+  .form {
+    
+  }
+  
+}
+@media only screen and (min-width: 768px) {
+  .form {
+    width: 550px;
+
+    padding: 25px;
+  }
+  .form label > span {
+    margin-bottom: 0;
+  }
+  .form input[type=text],
+  .form input[type=email],
+  .form textarea {
+    width: 346px;
+  }
+  .submit-btn {
+    width: 80px;
+  }
+}
+
+.map-container {
+  height: 400px;
+}
+.map {
+  position: relative;
+  overflow: hidden;
+  width: 70%;
+  height: 300px;
+
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+/* .col-1-3 {
+  width: 35%;
+  height: 300px;
+} */
+/* .col-2-3 {
+  width: 55%;
+  height: 300px;
+} */
+/* .col-1-3,
+.col-2-3 {
+  margin: 25px;
+} */
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
 }

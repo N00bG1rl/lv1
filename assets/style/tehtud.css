@@ -1,9 +1,27 @@
 
 /* TEHTUD */
 
-.tehtud-content {
-  width: 100%;
-  /* overflow: hidden; */
+.list-container ul {
+  text-align: center;
+}
+.list-container ul li {
+  display: inline-block;
+  padding: 8px;
+  text-transform: uppercase;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  /* border-bottom: 1px solid #999; */
+}
+/* .list-container ul li:last-child {
+  border: none;
+} */
+.list-container ul li:hover {
+  color: #EB5936;
+}
+.active {
+  color: #EB5936;
+  transition: all 0.3s ease-in-out;
 }
 .grid-container {
   margin: 50px;
@@ -21,6 +39,12 @@
   /* height: 150px; */
   margin-bottom: 40px;
   text-align: center;
+  display: none;
+  transition: all 3s;
+}
+.show {
+  display: block;
+  transition: all 0.5s ease;
 }
 .grid-item img {
   width: 180px;
