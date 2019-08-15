@@ -1,18 +1,24 @@
 .main-content {
   max-width: 600px;
 }
-
+.contact-info {
+  padding: 13px;
+}
 .contact-info div {
-  padding: 10px;
+  padding: 12px;
 }
 .contact-info h3 {
   font-size: 12px;
   text-transform: uppercase;
   margin-bottom: 6px;
+  color: #F28B4F;
 }
 .contact-info p {
   font-size: 12px;
 }
+/* .contact-info a {
+
+} */
 
 .form-container {
   max-width: 900px;
@@ -91,8 +97,9 @@
 	overflow: hidden;
 	resize:none;
 }
-.submit-btn {
+label.submit-btn {
   width: 80px;
+  display: inline-block;
 }
 .form textarea:focus, 
 .form input[type=text]:focus,
@@ -134,8 +141,9 @@ background: #394D61;
   .form textarea {
     width: 346px;
   }
-  .submit-btn {
+  label.submit-btn {
     width: 80px;
+    display: inline-block;
   }
 }
 
