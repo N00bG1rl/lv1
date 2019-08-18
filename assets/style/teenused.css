@@ -94,8 +94,3 @@ body {
     min-width: 250px;
   }
 }
-.footer.row {
-  background: rgba(66, 78, 89, 0.6);
-  border: 1px solid #424E59;
-  border-radius: 6px;
-}

@@ -4,29 +4,17 @@ body {
 
 .main-content {
   max-width: 600px;
-}
-.contact-info {
-  padding: 13px;
-}
-.contact-info div {
-  padding: 12px;
-}
-.contact-info h3 {
-  font-size: 12px;
-  text-transform: uppercase;
-  margin-bottom: 6px;
-  color: #F28B4F;
-}
-.contact-info p {
-  font-size: 12px;
-}
-/* .contact-info a {
 
-} */
-
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
 .form-container {
   max-width: 900px;
-  height: 260px;
+  height: 320px;
   margin-top: 100px;
 
   position: relative;
@@ -37,55 +25,41 @@ body {
   -webkit-transform: translateX(-50%);
 }
 .form {
-  /* width: 250px; */
   width: 100%;
+  height:;
 	font-size: 16px;
 	background: rgba(66, 78, 89, 0.6);
   border: 2px solid #424E59;
   border-radius: 6px;
 	padding: 12px;
-
   float: right;
-}
-.main-content
- {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
 }
 .form input[type=submit],
 .form input[type=button],
 .form input[type=text],
 .form input[type=email],
 .form textarea,
-.form label
-{
+.form label {
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 16px;
 	color: #fff;
-
 }
 .form label {
 	display:block;
 	margin-bottom: 12px;
 }
-
-.form label > span{
+.form label > span {
 	display: inline-block;
 	float: left;
   width: 150px;
   margin-bottom: 12px;
 }
 .form input[type=text],
-.form input[type=email]
-{
+.form input[type=email] {
 	background: transparent;
 	border: none;
-	border-bottom: 1px dashed #83A4C5;
-	width: 222px;
+	border-bottom: 1px dashed #395870;
+	width: 100%;
 	outline: none;
 	padding: 0px 0px 0px 0px;
 	font-style: italic;
@@ -96,9 +70,9 @@ body {
 	background: transparent;
 	outline: none;
 	border: none;
-	border-bottom: 1px dashed #83A4C5;
-  width: 222px;
-  height: 20px;
+	border-bottom: 1px dashed #395870;
+  width: 100%;
+  height: 80px;
 	overflow: hidden;
 	resize:none;
 }
@@ -111,11 +85,11 @@ label.submit-btn {
 .form input[type=email]:focus,
 .form input[type=email] :focus
 {
-	border-bottom: 1px dashed #D9FFA9;
+	border-bottom: 1px dashed #5BD887;
 }
 .form input[type=submit],
 .form input[type=button]{
-	background: #576E86;
+	background: #314b60;
   border: none;
   width: 60px;
 	padding: 8px 10px 8px 10px;
@@ -124,18 +98,39 @@ label.submit-btn {
 }
 .form input[type=submit]:hover,
 .form input[type=button]:hover{
-background: #394D61;
+background: #395870;
+}
+
+.contact-info {
+  padding: 25px;
+  height: 305px;
+
+  position: relative;
+left: 50%;
+transform: translateX(-50%);
+-moz-transform: translateX(-50%);
+-ms-transform: translateX(-50%);
+-webkit-transform: translateX(-50%);
+}
+.contact-info div {
+  padding: 13px;
+}
+.contact-info h3 {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  color: #F28B4F;
+}
+.contact-info p {
+  font-size: 12px;
 }
 @media only screen and (min-width: 620px) {
-  .form {
-    
-  }
   
 }
 @media only screen and (min-width: 768px) {
   .form {
     width: 550px;
-
+    height: 305px;
     padding: 25px;
   }
   .form label > span {
@@ -150,6 +145,10 @@ background: #394D61;
     width: 80px;
     display: inline-block;
   }
+  .contact-info {
+    left: 0;
+    transform: none;
+  }
 }
 
 .map-container {
@@ -159,7 +158,8 @@ background: #394D61;
 .map {
   position: relative;
   overflow: hidden;
-  width: 70%;
+  width: 100%;
+  max-width: 900px;
   height: 300px;
 
   position: relative;

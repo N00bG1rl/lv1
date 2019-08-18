@@ -36,7 +36,7 @@
     <div class="mobile-nav-wrapper">
       <div class="open-icon" onclick="openNav()">
         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-          width="50" height="50"
+          width="45" height="45"
           viewBox="0 0 172 172"
           style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><g id="surface1"><path d="M0,25.8v17.2h172v-17.2zM0,77.4v17.2h172v-17.2zM0,129v17.2h172v-17.2z"></path></g></g></g>
         </svg>
@@ -63,27 +63,32 @@
   </header>
 
   <!--Main content info-->
-  <section class="main container">
-    <section class="main-content">
-      <p>Oleme ettevõte, mis spetsialiseerub eritellimusel <a href="teenused.html"><span>alumiiniumist</span></a> </br> akende,
-          lükanduste ning <a href="teenused.html"><span>alumiiniumprofiilidest klaasfassaadide</span></a> tootmisele. </br>
-          Meie meeskond koosneb eranditult laialdaste
-          kogemustega spetsialistidest ning kvaliteedis järeleandmisi ei tehta.
-      </p>
-    </section>
+  <section class="main-wrapper">
+    <div class="handle-wrapper" id="handle-wrapper">
+      <img id="handle" onclick="toggleContent()" src="assets/images/index/handle2.png">
+    </div>
+    <div class="main container">
+      <section class="main-content" id="main">
+        <p>Oleme ettevõte, mis spetsialiseerub eritellimusel <a href="teenused.html"><span>alumiiniumist</span></a> </br> akende,
+            lükanduste ning <a href="teenused.html"><span>alumiiniumprofiilidest klaasfassaadide</span></a> tootmisele. </br>
+            Meie meeskond koosneb eranditult laialdaste
+            kogemustega spetsialistidest ning kvaliteedis järeleandmisi ei tehta.
+        </p>
+      </section>
+    </div>
   </section>
 
   <!--Right bottom features info-->
   <section class="features">
     <ul>
-      <li><a href="teenused.html">Aknad</a></li>
-      <li><a href="teenused.html">Siseuksed</a></li>
-      <li><a href="teenused.html">Välisuksed</a></li>
-      <li><a href="teenused.html">Vaheseinad</a></li>
-      <li><a href="teenused.html">Talveaiad</a></li>
-      <li><a href="teenused.html">Terrassi klaasid</a></li>
-      <li><a href="teenused.html">Klaasfassaadid</a></li>
-      <li><a href="teenused.html">Klaasi müük</a></li>
+      <li>Aknad</li>
+      <li>Siseuksed</li>
+      <li>Välisuksed</li>
+      <li>Vaheseinad</li>
+      <li>Talveaiad</li>
+      <li>Terrassi klaasid</li>
+      <li>Klaasfassaadid</li>
+      <li>Klaasi müük</li>
       <li>
         <a href="teenused.html">
           <span>Rohkem</span>
@@ -115,8 +120,6 @@
     </section>
   </section>
 
-  
-  
   <!--Footer contact info-->
   <section class="footer row">
     <div class="footer-info col-3">
