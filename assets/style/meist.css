@@ -1,0 +1,35 @@
+.info {
+  width: 300px;
+  margin-bottom: 125px;
+}
+.info-content {
+  padding: 0 25px 25px 0;
+}
+.info-content h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.info-content p {
+  padding: 12px;
+}
+.info-content span {
+  position: absolute;
+  left: 450px;
+  font-size: 12px;
+}
+.meist-span {
+  margin-top: -220px;
+}
+.kvalikteet-span {
+  margin-top: -128px;
+}
+.img-span {
+  margin-top: -182px;
+}
+span em {
+  font-weight: bold;
+}
+.features {
+  position: fixed;
+}
