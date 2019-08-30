@@ -1,8 +1,8 @@
+/* #TEENUSED */
+
 body {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(36, 38, 37, .4)), url("../images/teenused/teenused-bg.jpg");
 }
-
-/* #TEENUSED */
 
 .main-content {
   max-width: 1000px;
@@ -12,7 +12,7 @@ body {
 }
 .grid-container {
   /* height: 800px; */
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
   /* background: rgba(66, 78, 89, 0.9); */
 
   display: flex;
@@ -84,7 +84,17 @@ body {
   filter: grayscale(80%);
   margin-bottom: 10px;
 }
+.partners {
+  margin-bottom: 150px;
 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.partners img {
+  padding: 13px;
+}
 @media only screen and (min-width: 620px) {
   
 }
