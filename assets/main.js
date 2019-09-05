@@ -15,8 +15,13 @@ function adjust_textarea(h) {
 }
 
 function toggleContent() {
-  var main = document.getElementById('main');
-  main.classList.toggle('open');
+  var mainContent = document.getElementById('main-content');
+  var rotate = document.getElementById('rightArrow');
+  let txtRotate = document.getElementById('txt-rotate');
+
+  mainContent.classList.toggle('open');
+  rotate.classList.toggle('imgRotate');
+  txtRotate.classList.toggle('txtNone');
 }
 
 /* function openContent() {

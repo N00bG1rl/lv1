@@ -41,12 +41,11 @@ html,
 body {
   background-color: #475259;
   min-width: 300px;
-  
 }
 
 .desktop-nav, header img, .features,
 .footer-info h3, .media img,
-header.logo-img,
+header.logo-img, .rotate,
 .mobile-nav-wrapper, .over-image-txt {
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -57,6 +56,11 @@ header.logo-img,
 .container {
   display: block;
   margin: 25px;
+}
+@media only screen and (max-height: 700px) {
+  .container {
+    margin-top: 0;
+  }
 }
 
 /* Top navigation */
@@ -196,12 +200,12 @@ header {
   padding: 5px;
   text-align: center;
 }
-.main-content p span {
+.main-content span a {
   text-transform: uppercase;
   color: #EB5936;
   font: bold;
 }
-.main-content a span:hover {
+.main-content span a:hover {
   color: #fff;
 }
 @media only screen and (min-width: 620px) {
@@ -273,7 +277,12 @@ header {
     left: auto;
     bottom: 25px;
     right: 25px;
-    margin: 0;
+    margin: 25px 0 0 0;
+  }
+}
+@media only screen and (max-height: 700px) {
+  .features {
+    position: relative;
   }
 }
 

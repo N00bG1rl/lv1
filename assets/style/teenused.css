@@ -3,12 +3,25 @@
 body {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(36, 38, 37, .4)), url("../images/teenused/teenused-bg.jpg");
 }
-
 .main-content {
+  margin-bottom: 100px;
   max-width: 1000px;
-  margin: 0 auto;
   padding: 25px;
   display: block;
+  position: relative;
+
+  left: 50%;
+  transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+.content-header {
+  margin-bottom: 12px;
+  border-bottom: 4px solid #424E59;
+}
+.content-header div {
+  margin-bottom: 25px;
 }
 .grid-container {
   /* height: 800px; */
@@ -19,18 +32,22 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: -moz-box;
+
   justify-content: center;
 }
 .grid-row {
   width: 100%;
   max-width: 900px;
+
   display: flex;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: -moz-box;
+
   flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
+
   justify-content: center;
 }
 .grid-item {
@@ -85,7 +102,7 @@ body {
   margin-bottom: 10px;
 }
 .partners {
-  margin-bottom: 150px;
+  border-top: 4px solid #424E59;
 
   display: flex;
   flex-wrap: wrap;
@@ -95,12 +112,14 @@ body {
 .partners img {
   padding: 13px;
 }
-@media only screen and (min-width: 620px) {
-  
-}
 @media only screen and (min-width: 768px) {
   .grid-item {
     width: 43%;
     min-width: 250px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .main-content {
+    margin-bottom: 25px;
   }
 }
