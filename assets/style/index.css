@@ -7,7 +7,7 @@ body {
 .main-content {
   position: relative;
   height: auto;
-  padding: 12px;
+  padding: 25px 0;
 
   left: 50%;
   transform: translateX(-50%);
@@ -32,7 +32,7 @@ body {
 @media only screen and (min-width: 620px) {
   .main-content {
     width: 80%;
-    margin-left: -1500px;
+    margin-left: -2500px;
     transition: 1s;
   }
   .main-content.open {
@@ -42,7 +42,7 @@ body {
   .handle-wrapper {
     position: absolute;
     left: 25px;
-    top: 52%;
+    top: 55%;
     transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -62,6 +62,7 @@ body {
     font-family: 'Open Sans', 'sans-serif';
   }
   .txtRotate {
+    transition: all 0.9s ease-in-out;
     transform: rotate(-90deg); 
     /* Safari */
     -webkit-transform: rotate(-90deg);
@@ -76,16 +77,19 @@ body {
   }
   .handle-wrapper p {
     padding: 12px;
+    transition: all 0.9s ease-in-out;
   }
   .txtNone {
-    display: none;
-
+    transition: all 0.9s ease-in-out;
+     display: none;
+    /*
     -webkit-animation-duration: 10s;
     animation-duration: 10s;
     -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+    animation-fill-mode: both; */
   }
-  @-webkit-keyframes fadeOut {
+}
+/*   @-webkit-keyframes fadeOut {
     0% {opacity: 1;}
     100% {opacity: 0;}
  }
@@ -99,14 +103,14 @@ body {
     -webkit-animation-name: fadeOut;
     animation-name: fadeOut;
  }
-}
+} */
 
 /* Portfolio preview, grid */
 .grid-container {
   margin: 25px 25px 100px 25px;
 }
 .grid {
-  margin: 50px;
+  margin-top: 100px;
   position: relative;
 
   display: flex;
@@ -115,9 +119,9 @@ body {
   display: -moz-box;
   align-items: center;
   -webkit-align-items: center;
-  flex-direction: column;
+  /* flex-direction: column;
   -webkit-flex-direction: column;
-  -moz-flex-direction: column;
+  -moz-flex-direction: column; */
 }
 .grid-item {
   padding: 2px;
@@ -143,7 +147,7 @@ body {
   background: rgba(252, 247, 250, 0.7);
 }
 .more-items p span {
-  color: #EB5936;
+  color: #424E59;
   font-size: 20px;
   padding-right: 7px;
   position: absolute;

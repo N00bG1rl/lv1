@@ -12,7 +12,7 @@ body {
   text-transform: uppercase;
   font-size: 12px;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
   /* border-bottom: 1px solid #999; */
 }
 /* .list-container ul li:last-child {
@@ -23,7 +23,7 @@ body {
 }
 .active {
   color: #EB5936;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 .grid-container {
   margin: 50px;

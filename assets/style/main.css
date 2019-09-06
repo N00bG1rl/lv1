@@ -69,8 +69,9 @@ header {
 }
 .logo-img {
   float: right;
-  height: 80px;
-  width: 100px;
+  width: 200px;
+  height: 152px;
+  margin: -12px;
 }
 .desktop-nav-wrapper {
   display: none;
@@ -91,7 +92,7 @@ header {
   background: linear-gradient(#475259, #5F6B72);
   color: #fff;
   font-size: 10px;
-  padding: 8px 10px;
+  padding: 12px 20px;
   border-right: 1px solid rgba(0, 0, 0, .3);
 }
 .desktop-nav a.current,
@@ -105,23 +106,6 @@ header {
 .desktop-nav li:last-child a {
   border-left: none;
   border-radius: 0 4px 4px 0;
-}
-@media only screen and (min-width: 620px) {
-  .desktop-nav ul {
-    margin: 25px;
-  }
-  .desktop-nav li a {
-    font-size: 12px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .logo-img {
-    width: 180px;
-    height: 132px;
-  }
-  .desktop-nav li a {
-    padding: 12px 20px;
-  }
 }
 
 /* Mobile toggle nav */
@@ -181,7 +165,7 @@ header {
   float: right;
   right: 20px;
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 768px) {
   .desktop-nav-wrapper {display: block;}
   .mobile-nav-wrapper {display: none;}
 }
@@ -221,17 +205,21 @@ header {
  
 /* Right bottom features info */
 .features {
-  width: 180px;
-  margin-top: 50px;
+  /*  */
+  margin-top: 100px;
   position: relative;
-  height: auto;
-  right: 80px;
+ /*  height: auto; */
+ height: 190px;
+  /* */
 
-  left: 50%;
+  display: flex;
+  justify-content: space-around;
+
+  /* left: 50%;
   transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%); */
 
   background: rgba(66, 78, 89, 0.6);
   padding: 10px 10px 0 10px;
@@ -244,16 +232,16 @@ header {
   padding-bottom: 5px;
   display: block;
   list-style: none;
-  font-size: 18px;
+  font-size: 15px;
   font-family: 'Open Sans', sans-serif;
   color: #fff;
 }
-.features li:last-child {
+/* .features li:last-child {
   width: 100%;
   height: 50px;
   margin-top: 15px;
   padding: 0;
-}
+} */
 .features li:last-child a {
   display: flex;
   display: -webkit-flex;
@@ -269,6 +257,21 @@ header {
 .features li a svg {
   margin-left: 15px;
 }
+.features-more {
+  display: flex;
+  align-self: flex-end;
+  justify-content: center;
+
+  position: absolute;
+}
+@media only screen and (min-width: 400px) {
+  .features {
+    height: 210px;
+  }
+  .features li {
+    font-size: 18px;
+  }
+}
 @media only screen and (min-width: 620px) {
   .features {
     position: absolute;
@@ -278,6 +281,18 @@ header {
     bottom: 25px;
     right: 25px;
     margin: 25px 0 0 0;
+
+    width: 220px;
+    height: auto;
+    right: 25px;
+
+    flex-direction: column;
+  }
+  .features-more {
+    align-self: center;
+    display: flex;
+    position: relative;
+    margin-top: 12px;
   }
 }
 @media only screen and (max-height: 700px) {
