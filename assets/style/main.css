@@ -205,21 +205,11 @@ header {
  
 /* Right bottom features info */
 .features {
-  /*  */
   margin-top: 100px;
   position: relative;
- /*  height: auto; */
- height: 190px;
-  /* */
-
+  height: 190px;
   display: flex;
   justify-content: space-around;
-
-  /* left: 50%;
-  transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -webkit-transform: translateX(-50%); */
 
   background: rgba(66, 78, 89, 0.6);
   padding: 10px 10px 0 10px;
@@ -276,8 +266,6 @@ header {
   .features {
     position: absolute;
     float: right;
-    transform: none;
-    left: auto;
     bottom: 25px;
     right: 25px;
     margin: 25px 0 0 0;
