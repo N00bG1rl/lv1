@@ -7,27 +7,16 @@ body {
   margin-bottom: 150px;
   max-width: 1200px;
   width: 80%;
-  padding: 0 12px;
   display: block;
-  position: relative;
-
-  left: 50%;
-  transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
 }
 .content-header {
-  padding: 25px 0;
+  padding-bottom: 25px;
   border-bottom: 2px solid #424E59;
 }
 .content-header div {
   padding: 0;
 }
 .grid-container {
-  /* height: 800px; */
-  /* margin-bottom: 100px; */
-  /* background: rgba(66, 78, 89, 0.9); */
   padding: 12px 0;
   border-bottom: 2px solid #424E59;
 
@@ -66,18 +55,6 @@ body {
   border-radius: 6px;
   color: #fff;
 }
-/* .item {
-  height: 80px;
-  position: relative;
-  text-align: center;
-  color: #fff;
-  font-size: 15px;
-
-  border-bottom: 1px solid #fff;
-  background-image: linear-gradient( rgba(36, 38, 37, .6), rgba(36, 38, 37, .6)),  url("../images/teenused/siseuksed.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-} */
 .grid-item-img {
   position: relative;
   width: 100%;
@@ -135,9 +112,6 @@ body {
   .grid-item p {
     margin: 25px;
   }
-  /* .over-image-txt {
-    top: 50%;
-  } */
 }
 @media only screen and (min-width: 992px) {
   .grid-item {
