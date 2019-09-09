@@ -7,8 +7,9 @@ body {
 .main-content {
   position: relative;
   height: auto;
-  
-
+}
+.main-content p em {
+  text-transform: uppercase;
 }
 .handle-wrapper {
   display: none;

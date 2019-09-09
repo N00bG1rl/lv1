@@ -5,9 +5,6 @@
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
-* p em {
-  text-transform: uppercase;
-}
 * a {
   text-decoration: none;
   color: #fff;
@@ -71,7 +68,7 @@ header {
   float: right;
   width: 200px;
   height: 152px;
-  margin: -12px;
+  margin: -15px;
 }
 .desktop-nav-wrapper {
   display: none;
@@ -91,7 +88,7 @@ header {
   background: #395870;
   background: linear-gradient(#475259, #5F6B72);
   color: #fff;
-  font-size: 10px;
+  font-size: 12px;
   padding: 12px 20px;
   border-right: 1px solid rgba(0, 0, 0, .3);
 }
@@ -302,7 +299,7 @@ header {
   width: 100%;
   height: 55px;
   position: absolute;
-  bottom: 0;
+  bottom: 25px;
 
   /* background: rgba(66, 78, 89, 0.6);
   border: 2px solid #424E59;
@@ -366,6 +363,7 @@ header {
   .footer {
     width: 380px;
     margin: 25px;
+    bottom: 0;
   }
   .footer div {
     text-align: start;
