@@ -1,3 +1,5 @@
+/* #INDEX */
+
 body {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(36, 38, 37, .2)), url("../images/index/lvimg.png");
 }
@@ -73,104 +75,8 @@ body {
   }
   .handle-wrapper p {
     padding: 12px;
-    transition: all 0.9s ease-in-out;
   }
   .txtNone {
-    transition: all 0.9s ease-in-out;
     display: none;
-    /*
-    -webkit-animation-duration: 10s;
-    animation-duration: 10s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both; */
-  }
-}
-/*   @-webkit-keyframes fadeOut {
-    0% {opacity: 1;}
-    100% {opacity: 0;}
- }
- 
- @keyframes fadeOut {
-    0% {opacity: 1;}
-    100% {opacity: 0;}
- }
- 
- .fadeOut {
-    -webkit-animation-name: fadeOut;
-    animation-name: fadeOut;
- }
-} */
-
-/* Portfolio preview, grid */
-.grid-container {
-  margin: 25px 25px 100px 25px;
-}
-.grid {
-  margin-top: 100px;
-  position: relative;
-
-  display: flex;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: -moz-box;
-  align-items: center;
-  -webkit-align-items: center;
-  /* flex-direction: column;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column; */
-}
-.grid-item {
-  padding: 2px;
-}
-.grid-item img {
-  width: 154px;
-  height: 125px;
-  border-radius: 4px;
-  /* filter: grayscale(50%); */
-}
-/* .grid-item img:hover {
-  filter: grayscale(0);
-} */
-.more-items {
-  position: relative;
-}
-.more-items p {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 2;
-  background: rgb(252, 247, 250);
-  background: rgba(252, 247, 250, 0.7);
-}
-.more-items p span {
-  color: #424E59;
-  font-size: 20px;
-  padding-right: 7px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-@media only screen and (min-width: 620px) {
-  .grid-container {display: none;}
-  .grid {
-    width: 200px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .grid-container {
-    margin-top: 100px;
-  }
-  .grid {
-    width: 500px;
-    flex-direction: row;
-    -webkit-flex-direction: row;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .grid {width: 600px;}
-  .grid-item img {
-    width: 184px;
-    height: 155px;
   }
 }

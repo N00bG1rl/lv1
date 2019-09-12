@@ -4,7 +4,6 @@ body {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(36, 38, 37, .4)), url("../images/teenused/teenused-bg.jpg");
 }
 .main-content {
-  margin-bottom: 150px;
   max-width: 1200px;
   width: 80%;
   display: block;
@@ -165,10 +164,11 @@ body {
 .partners-header-txt {
   text-align: center;
   position: relative;
+  padding: 25px;
   font-size: 15px;
   font-weight: bold;
   text-decoration: underline #EB5936;
-  padding: 25px;
+  text-transform: uppercase;
 }
 .partners img {
   padding: 13px;
@@ -188,13 +188,6 @@ body {
   .grid-item p {
     margin: 25px;
   }
-  /* .popup-img {
-    margin: 0;
-  } */
- /*  .my-mfp-zoom-in button.mfp-close,
-  .my-mfp-zoom-in .mfp-close:active {
-    right: -25px;
-  } */
   .popup-info p {
     font-size: 15px;
   }

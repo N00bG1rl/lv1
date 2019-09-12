@@ -1,8 +1,8 @@
+/* #TEHTUD */
+
 body {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba( 36, 38, 37, .8)),  url("../images/tehtud/bg1.jpg");
 }
-/* TEHTUD */
-
 .list-container ul {
   text-align: center;
 }
@@ -13,11 +13,7 @@ body {
   font-size: 15px;
   cursor: pointer;
   transition: all 0.1s ease-in-out;
-  /* border-bottom: 1px solid #999; */
 }
-/* .list-container ul li:last-child {
-  border: none;
-} */
 .list-container ul li:hover {
   color: #EB5936;
 }
@@ -37,8 +33,6 @@ body {
   -webkit-flex-wrap: wrap;
 }
 .grid-item {
-  /* width: 180px; */
-  /* height: 150px; */
   margin-bottom: 40px;
   text-align: center;
   display: none;
@@ -54,13 +48,6 @@ body {
 }
 
 @media only screen and (min-width: 620px) {
-  .grid-container {
-    /* width: 60%; */
-  }
-  /* .grid-item {
-    width: 336px;
-    height: 280px;
-  } */
   .grid-item img {
     width: 300px;
     height: 250px;
