@@ -184,7 +184,7 @@ header {
   -webkit-transform: translateX(-50%);
 }
 .main-content p {
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.4em;
   padding: 5px;
   text-align: center;
@@ -210,7 +210,7 @@ header {
  
 /* Right bottom features info */
 .features {
-  margin-top: 100px;
+  margin-top: 200px;
   position: relative;
   height: 190px;
   display: flex;
@@ -259,6 +259,15 @@ header {
 
   position: absolute;
 }
+.features p {
+  position: absolute;
+  top: -40px;
+  left: -10px;
+  font-size: 11px;
+  font-weight: bold;
+  border-bottom: 1px solid #EB5936;
+}
+
 @media only screen and (min-width: 400px) {
   .features {
     height: 210px;
@@ -280,6 +289,11 @@ header {
     right: 25px;
 
     flex-direction: column;
+  }
+  .features p {
+    top: -0px;
+    left: -340px;
+    font-size: 15px;
   }
   .features-more {
     align-self: center;
@@ -347,7 +361,7 @@ header {
 .footer-info h3,
 .footer-info a {
   color: #fff;
-  font-size: 12px;
+  font-size: 11px;
   font-family: "Helvetica", "sans-serif";
   margin: 0;
   padding: 5px;
@@ -368,4 +382,8 @@ header {
   .footer div {
     text-align: start;
   }
+  .footer-info h3,
+  .footer-info a {
+    font-size: 12px;
+}
 }

@@ -16,9 +16,7 @@
 <body>
   <header>
     <!--Company logo-->
-    <!-- <div class="logo-wrapper"> -->
-      <img class="logo-img" src="assets/images/main/lvlogo.png" alt="company logo">
-    <!-- </div> -->
+    <img class="logo-img" src="assets/images/main/lvlogo.png" alt="company logo">
 
     <!--Desktop top navigation-->
     <div class="desktop-nav-wrapper">
@@ -67,14 +65,12 @@
     <section class="content-header">
       <h1>Alumiiniumprofiilide</h1>
       <p> võimalused on piiramatult suured ning koostöös tellijaga leiame lahendused, mis on parimad nii kvaliteedi, tootmiskiiruse, kui hinna poolest.</p>
-      <p>Vōta ühendust...</p>
+      <!-- <p>Vōta ühendust...</p> -->
     </section>
   </section>
 
-  
-
   <section class="map-container container">
-    <div class="contact-info col-1-3">
+    <div class="contact-info"> <!-- col-1-3 -->
       <img src="assets/images/contact/pointer.png">
       <div class="address">
         <h3>Aadress</h3>
@@ -97,26 +93,23 @@
   </section>
 
   <section class="container">
-      <div class="form-container">
-        <form class="form" action="" method="post">
-          <label for="field1">
-            <span>Sinu nimi*</span><input type="text" name="field1" required="true" />
-          </label>
-          <label for="field2">
-            <span>E-posti aadress*</span><input type="email" name="field2" required="true" />
-          </label>
-          <!-- <label for="field3">
-            <span>Pealkiri*</span><input type="text" name="field3" required="true" />
-          </label> -->
-          <label for="field4">
-            <span>Sõnum*</span><textarea name="field4" onkeyup="adjust_textarea(this)" required="true" spellcheck="false"></textarea>
-          </label>
-          <label class="submit-btn">
-            <span> </span><input type="submit" value="Saada" />
-          </label>
-        </form>
-      </div>
-    </section>
+    <div class="form-container">
+      <form class="form" action="" method="post">
+        <label for="field1">
+          <span>Sinu nimi</span><input type="text" name="field1" required="true" />
+        </label>
+        <label for="field2">
+          <span>Sinu e-posti aadress</span><input type="email" name="field2" required="true" />
+        </label>
+        <label for="field4">
+          <span>Sõnum</span><textarea name="field4" onkeyup="adjust_textarea(this)" required="true" spellcheck="false"></textarea>
+        </label>
+        <label class="submit-btn">
+          <span> </span><input type="submit" value="Saada" />
+        </label>
+      </form>
+    </div>
+  </section>
 
   <!--Footer contact info-->
   <section class="footer row">
@@ -141,6 +134,5 @@
   </section>
 
   <script src="assets/main.js"></script>
-
 </body>
 </html>

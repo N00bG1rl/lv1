@@ -6,10 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
   
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800&display=swap" rel="stylesheet">
-  
+    <!-- jquery script -->
+    <script src="assets/jquery-3.4.1.min.js"></script>
+    <!-- responsiveslides script -->
+    <script src="assets/responsiveslides.min.js"></script>
+    
+    <!-- Reset style -->
     <link rel="stylesheet" href="assets/style/reset.css">
+    <!-- Main style -->
     <link rel="stylesheet" href="assets/style/main.css">
+    <!-- Custom style -->
     <link rel="stylesheet" href="assets/style/teenused.css">
+    <!-- Magnific-popup custom style -->
+    <link rel="stylesheet" href="assets/style/magnific-popup.css">
   
     <title>LV Metall - Pealeht</title>
   </head>
@@ -65,7 +74,7 @@
     <section class="content-header">
       <div>
         <p>Valmistame <em>klaas-alumiinium</em> avatäiteid.</p>
-        <p><em>alumiinium</em> on suurepärane materjal avatäidete valmistamiseks. See ei korrodeeru ja seda on kerge 
+        <p><em>Alumiinium</em> on suurepärane materjal avatäidete valmistamiseks. See ei korrodeeru ja seda on kerge 
            töödelda, mis teeb konstruktsioonid pikaealiseks ning kergesti hooldatavateks.
         </p>
         <p>Erinevalt mitmetest 
@@ -84,54 +93,413 @@
       <section class="grid-row">
 
         <section class="grid-item">
-          <div class="grid-item-img grid-item-overlay">
-            <img src="assets/images/teenused/klaasfasaadid.jpg" alt="Klaasist vahesein">
+          <!--(Project popup)-->
+          <div class="item-img">
+            <div class="my_img">
+              <a class="popup-with-zoom-anim" href="#slider_popup_1">
+                <img src="assets/images/teenused/valisuksed.jpg" alt="Valisuks">
+              </a>
+            </div>
             <div class="over-image-txt">
-              <h3>Siseuksed</h3>
-              <h3>Vaheseinad</h3>
-              <h3>Lükand-, voldik- või käänduks</h3>
+              <a class="popup-with-zoom-anim" href="#slider_popup_1">
+                <h3>Aknad</h3>
+              </a>
             </div>
           </div>
-          <p>
-            Hoonete sees ... mugavus ... disain ...
-          </p>
-        </section>
-
-        <section class="grid-item">
-          <div class="grid-item-img">
-            <img src="assets/images/teenused/valisuksed.jpg" alt="Valisuks">
-            <div class="over-image-txt">
-              <h3>Aknad</h3>
-              <h3>Välisuksed</h3>
-            </div>
-          </div>
-          <p>
-            Hoonete välispiiretesse sobivad külmakatkestuse ja termoisolatsiooniga profiilidest 
-            konstruktsioonid, mis tagavad hea soojapidavuse ning kaitse vihma ja tuulesurve eest. 
-            Külmakatkestusega profiilid on saadud poolprofiilide kokkurullimise teel ning tänu sellele 
-            on võimalik pakkuda konstruktsioone, mis on seest ja väljast erinevat värvi.
-          </p>
-        </section>
-
-        <section class="grid-item">
-            <div class="grid-item-img">
-              <img src="assets/images/teenused/talveaiad.jpg" alt="Klaas-alumiinium talveaed">
-              <div class="over-image-txt">
-                <h3>Talveaiad</h3>
-                <h3>Terrassi klaasuksed</h3>
+          <!--Details-->
+          <div id="slider_popup_1" class="mfp-hide slider_popup">
+            <div class="popup-item">
+              <div class="popup-img">
+                <!--Img slider-->
+                <ul class="rslides">
+                  <li>
+                    <img src="assets/images/teenused/valisuksed.jpg" alt="Valisuks">
+                  </li>                                     
+                  <li>
+                    <img src="assets/images/teenused/valisuksed.jpg" alt="Valisuks">
+                  </li>
+                  <li>
+                    <img src="assets/images/teenused/valisuksed.jpg" alt="Valisuks">
+                  </li>
+                </ul>
               </div>
-            </div>   
+              <!--Info-->
+              <div class="popup-info">
+                <h3>Aknad</h3>
+                <p>
+                  Hoonete välispiiretesse sobivad külmakatkestuse ja termoisolatsiooniga profiilidest 
+                  konstruktsioonid, mis tagavad hea soojapidavuse ning kaitse vihma ja tuulesurve eest. 
+                  Külmakatkestusega profiilid on saadud poolprofiilide kokkurullimise teel ning tänu sellele 
+                  on võimalik pakkuda konstruktsioone, mis on seest ja väljast erinevat värvi.
+                </p>
+              </div>
+            </div>
           </div>
-          <p>
-            Hoonete välispiiretesse sobivad külmakatkestuse ja termoisolatsiooniga profiilidest 
-            konstruktsioonid, mis tagavad hea soojapidavuse ning kaitse vihma ja tuulesurve eest. 
-            Külmakatkestusega profiilid on saadud poolprofiilide kokkurullimise teel ning tänu sellele 
-            on võimalik pakkuda konstruktsioone, mis on seest ja väljast erinevat värvi.
-          </p>
+        </section>
+        
+        <section class="grid-item">
+          <!--Project popup-->
+          <div class="item-img">
+            <div class="my_img">
+              <a class="popup-with-zoom-anim" href="#slider_popup_2">
+                <img src="assets/images/teenused/valisuksed.jpg" alt="Valisuks">
+              </a>
+            </div>
+            <div class="over-image-txt">
+              <a class="popup-with-zoom-anim" href="#slider_popup_1">
+                <h3>Uksed</h3>
+              </a>
+            </div>
+          </div>
+          <!--Details-->
+          <div id="slider_popup_2" class="mfp-hide slider_popup">
+            <div class="popup-item">
+              <div class="popup-img">
+                <!--Img slider-->
+                <ul class="rslides">
+                  <li>
+                    <img src="assets/images/teenused/valisuksed.jpg" alt="Valisuks">
+                  </li>                                     
+                  <li>
+                    <img src="assets/images/teenused/valisuksed.jpg" alt="Valisuks">
+                  </li>
+                  <li>
+                    <img src="assets/images/teenused/valisuksed.jpg" alt="Valisuks">
+                  </li>
+                </ul>
+              </div>
+              <!--Info-->
+              <div class="popup-info">
+                <h3>Uksed</h3>
+                <p>
+                  Hoonete välispiiretesse sobivad külmakatkestuse ja termoisolatsiooniga profiilidest 
+                  konstruktsioonid, mis tagavad hea soojapidavuse ning kaitse vihma ja tuulesurve eest. 
+                  Külmakatkestusega profiilid on saadud poolprofiilide kokkurullimise teel ning tänu sellele 
+                  on võimalik pakkuda konstruktsioone, mis on seest ja väljast erinevat värvi.
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section class="grid-item">
-            <div class="grid-item-img">
+          <!--Project popup-->
+          <div class="item-img">
+            <div class="my_img">
+              <a class="popup-with-zoom-anim" href="#slider_popup_3">
+                <img src="assets/images/teenused/valisuksed.jpg" alt="Valisuks">
+              </a>
+            </div>
+            <div class="over-image-txt">
+              <a class="popup-with-zoom-anim" href="#slider_popup_3">
+                <h3>Lükand-, voldik- või käänduks</h3>
+              </a>
+            </div>
+          </div>
+          <!--Details-->
+          <div id="slider_popup_3" class="mfp-hide slider_popup">
+            <div class="popup-item">
+              <div class="popup-img">
+                <!--Img slider-->
+                <ul class="rslides">
+                  <li>
+                    <img src="assets/images/teenused/valisuksed.jpg" alt="Valisuks">
+                  </li>                                     
+                  <li>
+                    <img src="assets/images/teenused/valisuksed.jpg" alt="Valisuks">
+                  </li>
+                  <li>
+                    <img src="assets/images/teenused/valisuksed.jpg" alt="Valisuks">
+                  </li>
+                </ul>
+              </div>
+              <!--Info-->
+              <div class="popup-info">
+                <h3>Lükand-, voldik- või käänduks</h3>
+                <p>
+                  Hoonete välispiiretesse sobivad külmakatkestuse ja termoisolatsiooniga profiilidest 
+                  konstruktsioonid, mis tagavad hea soojapidavuse ning kaitse vihma ja tuulesurve eest. 
+                  Külmakatkestusega profiilid on saadud poolprofiilide kokkurullimise teel ning tänu sellele 
+                  on võimalik pakkuda konstruktsioone, mis on seest ja väljast erinevat värvi.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="grid-item">
+          <!--(Project popup)-->
+          <div class="item-img">
+            <div class="my_img">
+              <a class="popup-with-zoom-anim" href="#slider_popup_4">
+                <img src="assets/images/teenused/valisuksed.jpg" alt="Valisuks">
+              </a>
+            </div>
+            <div class="over-image-txt">
+              <a class="popup-with-zoom-anim" href="#slider_popup_4">
+                <h3>Talveaiad</h3>
+              </a>
+            </div>
+          </div>
+          <!--Details-->
+          <div id="slider_popup_4" class="mfp-hide slider_popup">
+            <div class="popup-item">
+              <div class="popup-img">
+                <!--Img slider-->
+                <ul class="rslides">
+                  <li>
+                    <img src="assets/images/teenused/valisuksed.jpg" alt="Valisuks">
+                  </li>                                     
+                  <li>
+                    <img src="assets/images/teenused/valisuksed.jpg" alt="Valisuks">
+                  </li>
+                  <li>
+                    <img src="assets/images/teenused/valisuksed.jpg" alt="Valisuks">
+                  </li>
+                </ul>
+              </div>
+              <!--Info-->
+              <div class="popup-info">
+                <h3>Talveaiad</h3>
+                <p>
+                  Hoonete välispiiretesse sobivad külmakatkestuse ja termoisolatsiooniga profiilidest 
+                  konstruktsioonid, mis tagavad hea soojapidavuse ning kaitse vihma ja tuulesurve eest. 
+                  Külmakatkestusega profiilid on saadud poolprofiilide kokkurullimise teel ning tänu sellele 
+                  on võimalik pakkuda konstruktsioone, mis on seest ja väljast erinevat värvi.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="grid-item">
+          <!--Project popup-->
+          <div class="item-img">
+            <div class="my_img">
+              <a class="popup-with-zoom-anim" href="#slider_popup_5">
+                <img src="assets/images/teenused/valisuksed.jpg" alt="Valisuks">
+              </a>
+            </div>
+            <div class="over-image-txt">
+              <a class="popup-with-zoom-anim" href="#slider_popup_5">
+                <h3>Terrassi klaasid</h3>
+              </a>
+            </div>
+          </div>
+          <!--Details-->
+          <div id="slider_popup_5" class="mfp-hide slider_popup">
+            <div class="popup-item">
+              <div class="popup-img">
+                <!--Img slider-->
+                <ul class="rslides">
+                  <li>
+                    <img src="assets/images/teenused/valisuksed.jpg" alt="Valisuks">
+                  </li>                                     
+                  <li>
+                    <img src="assets/images/teenused/valisuksed.jpg" alt="Valisuks">
+                  </li>
+                  <li>
+                    <img src="assets/images/teenused/valisuksed.jpg" alt="Valisuks">
+                  </li>
+                </ul>
+              </div>
+              <!--Info-->
+              <div class="popup-info">
+                <h3>Terrassi klaasid</h3>
+                <p>
+                  Hoonete välispiiretesse sobivad külmakatkestuse ja termoisolatsiooniga profiilidest 
+                  konstruktsioonid, mis tagavad hea soojapidavuse ning kaitse vihma ja tuulesurve eest. 
+                  Külmakatkestusega profiilid on saadud poolprofiilide kokkurullimise teel ning tänu sellele 
+                  on võimalik pakkuda konstruktsioone, mis on seest ja väljast erinevat värvi.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="grid-item">
+          <!--Project popup-->
+          <div class="item-img">
+            <div class="my_img">
+              <a class="popup-with-zoom-anim" href="#slider_popup_6">
+                <img src="assets/images/teenused/valisuksed.jpg" alt="Valisuks">
+              </a>
+            </div>
+            <div class="over-image-txt">
+              <a class="popup-with-zoom-anim" href="#slider_popup_6">
+                <h3>Aknad</h3>
+              </a>
+            </div>
+          </div>
+          <!--Details-->
+          <div id="slider_popup_6" class="mfp-hide slider_popup">
+            <div class="popup-item">
+              <div class="popup-img">
+                <!--Img slider-->
+                <ul class="rslides">
+                  <li>
+                    <img src="assets/images/teenused/valisuksed.jpg" alt="Valisuks">
+                  </li>                                     
+                  <li>
+                    <img src="assets/images/teenused/valisuksed.jpg" alt="Valisuks">
+                  </li>
+                  <li>
+                    <img src="assets/images/teenused/valisuksed.jpg" alt="Valisuks">
+                  </li>
+                </ul>
+              </div>
+              <!--Info-->
+              <div class="popup-info">
+                <h3>Aknad</h3>
+                <p>
+                  Hoonete välispiiretesse sobivad külmakatkestuse ja termoisolatsiooniga profiilidest 
+                  konstruktsioonid, mis tagavad hea soojapidavuse ning kaitse vihma ja tuulesurve eest. 
+                  Külmakatkestusega profiilid on saadud poolprofiilide kokkurullimise teel ning tänu sellele 
+                  on võimalik pakkuda konstruktsioone, mis on seest ja väljast erinevat värvi.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="grid-item">
+          <!--Project popup-->
+          <div class="item-img">
+            <div class="my_img">
+              <a class="popup-with-zoom-anim" href="#slider_popup_7">
+                <img src="assets/images/teenused/valisuksed.jpg" alt="Valisuks">
+              </a>
+            </div>
+            <div class="over-image-txt">
+              <a class="popup-with-zoom-anim" href="#slider_popup_7">
+                <h3>Aknad</h3>
+              </a>
+            </div>
+          </div>
+          <!--Details-->
+          <div id="slider_popup_7" class="mfp-hide slider_popup">
+            <div class="popup-item">
+              <div class="popup-img">
+                <!--Img slider-->
+                <ul class="rslides">
+                  <li>
+                    <img src="assets/images/teenused/valisuksed.jpg" alt="Valisuks">
+                  </li>                                     
+                  <li>
+                    <img src="assets/images/teenused/valisuksed.jpg" alt="Valisuks">
+                  </li>
+                  <li>
+                    <img src="assets/images/teenused/valisuksed.jpg" alt="Valisuks">
+                  </li>
+                </ul>
+              </div>
+              <!--Info-->
+              <div class="popup-info">
+                <h3>Aknad</h3>
+                <p>
+                  Hoonete välispiiretesse sobivad külmakatkestuse ja termoisolatsiooniga profiilidest 
+                  konstruktsioonid, mis tagavad hea soojapidavuse ning kaitse vihma ja tuulesurve eest. 
+                  Külmakatkestusega profiilid on saadud poolprofiilide kokkurullimise teel ning tänu sellele 
+                  on võimalik pakkuda konstruktsioone, mis on seest ja väljast erinevat värvi.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="grid-item">
+          <!--Project popup-->
+          <div class="item-img">
+            <div class="my_img">
+              <a class="popup-with-zoom-anim" href="#slider_popup_7">
+                <img src="assets/images/teenused/valisuksed.jpg" alt="Valisuks">
+              </a>
+            </div>
+            <div class="over-image-txt">
+              <a class="popup-with-zoom-anim" href="#slider_popup_7">
+                <h3>Aknad</h3>
+              </a>
+            </div>
+          </div>
+          <!--Details-->
+          <div id="slider_popup_7" class="mfp-hide slider_popup">
+            <div class="popup-item">
+              <div class="popup-img">
+                <!--Img slider-->
+                <ul class="rslides">
+                  <li>
+                    <img src="assets/images/teenused/valisuksed.jpg" alt="Valisuks">
+                  </li>                                     
+                  <li>
+                    <img src="assets/images/teenused/valisuksed.jpg" alt="Valisuks">
+                  </li>
+                  <li>
+                    <img src="assets/images/teenused/valisuksed.jpg" alt="Valisuks">
+                  </li>
+                </ul>
+              </div>
+              <!--Info-->
+              <div class="popup-info">
+                <h3>Aknad</h3>
+                <p>
+                  Hoonete välispiiretesse sobivad külmakatkestuse ja termoisolatsiooniga profiilidest 
+                  konstruktsioonid, mis tagavad hea soojapidavuse ning kaitse vihma ja tuulesurve eest. 
+                  Külmakatkestusega profiilid on saadud poolprofiilide kokkurullimise teel ning tänu sellele 
+                  on võimalik pakkuda konstruktsioone, mis on seest ja väljast erinevat värvi.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="grid-item">
+          <!--Project popup-->
+          <div class="item-img">
+            <div class="my_img">
+              <a class="popup-with-zoom-anim" href="#slider_popup_8">
+                <img src="assets/images/teenused/valisuksed.jpg" alt="Valisuks">
+              </a>
+            </div>
+            <div class="over-image-txt">
+              <a class="popup-with-zoom-anim" href="#slider_popup_8">
+                <h3>Aknad</h3>
+              </a>
+            </div>
+          </div>
+          <!--Details-->
+          <div id="slider_popup_8" class="mfp-hide slider_popup">
+            <div class="popup-item">
+              <div class="popup-img">
+                <!--Img slider-->
+                <ul class="rslides">
+                  <li>
+                    <img src="assets/images/teenused/valisuksed.jpg" alt="Valisuks">
+                  </li>                                     
+                  <li>
+                    <img src="assets/images/teenused/valisuksed.jpg" alt="Valisuks">
+                  </li>
+                  <li>
+                    <img src="assets/images/teenused/valisuksed.jpg" alt="Valisuks">
+                  </li>
+                </ul>
+              </div>
+              <!--Info-->
+              <div class="popup-info">
+                <h3>Aknad</h3>
+                <p>
+                  Hoonete välispiiretesse sobivad külmakatkestuse ja termoisolatsiooniga profiilidest 
+                  konstruktsioonid, mis tagavad hea soojapidavuse ning kaitse vihma ja tuulesurve eest. 
+                  Külmakatkestusega profiilid on saadud poolprofiilide kokkurullimise teel ning tänu sellele 
+                  on võimalik pakkuda konstruktsioone, mis on seest ja väljast erinevat värvi.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Grid content  -->
+        <!-- <section class="grid-item">
+            <div class="item-img">
               <img src="assets/images/teenused/fassaad.jpg" alt="Klaasfasaad pilvelohkujal">
               <div class="over-image-txt">
                 <h3>Klaasfasaadid</h3>
@@ -144,7 +512,7 @@
             tulekindlat klaasi. Tulekindluse tagame vajaliku sertifikaadiga ning SAPA profiilide tootjapoolsete 
             katsetustega.
           </p>
-        </section>
+        </section> -->
 
       </section>
     </section>
@@ -184,6 +552,11 @@
     </div>
   </section>
 
+  <!-- Main script -->
   <script src="assets/main.js"></script>
+  <!-- Magnific-popup -->
+  <script src="assets/jquery.magnific-popup.min.js"></script>
+  <!-- Custom script -->
+  <script src="assets/teenused.js"></script>
 </body>
 </html>

@@ -77,7 +77,7 @@ body {
   }
   .txtNone {
     transition: all 0.9s ease-in-out;
-     display: none;
+    display: none;
     /*
     -webkit-animation-duration: 10s;
     animation-duration: 10s;
