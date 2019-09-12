@@ -3,8 +3,8 @@ $(document).ready(function() {
   $(function() {
     $(".rslides").responsiveSlides({
       nav: true,
-      prevText: '<i class="pe-7s-angle-left"></i>',
-      nextText: '<i class="pe-7s-angle-right"></i>',
+      /* prevText: '<i class="pe-7s-angle-left"></i>',
+      nextText: '<i class="pe-7s-angle-right"></i>', */
       pause: true,
     });
   });
