@@ -10,14 +10,6 @@
   color: #fff;
   font-size: 12px;
 }
-.transform50 {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-}
 .mrg-btm-150 {
   margin-bottom: 150px;
 }
@@ -53,7 +45,7 @@ body {
 
 .desktop-nav, header img, .features,
 .footer-info h3, .media img,
-header.logo-img, .rotate,
+header.logo-img, .rotate, .info-content span,
 .mobile-nav-wrapper, .over-image-txt {
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -98,6 +90,10 @@ header {
 .desktop-nav a {
   background: #395870;
   background: linear-gradient(#475259, #5F6B72);
+  background: -webkit-linear-gradient(#475259, #5F6B72);
+  background: -moz-linear-gradient(#475259, #5F6B72);
+  background: -o-linear-gradient(#475259, #5F6B72);
+
   color: #fff;
   font-size: 12px;
   padding: 12px 20px;
@@ -121,12 +117,13 @@ header {
   width: 0;
   height: 100%;
   position: fixed;
-  z-index: 9;
   left: 0; right: 0;
   top: 0; bottom: 0;
+  z-index: 9;
   overflow-x: hidden;
   background: rgba(66, 78, 89, 1);
   transition: .5s;
+  -webkit-transition: .5s;
 }
 .overlay-nav {
   width: 200px;
@@ -222,15 +219,17 @@ header {
 /* Right bottom features info */
 .features {
   margin-top: 200px;
-  position: relative;
+  margin-bottom: 150px;
   height: 190px;
-  display: flex;
-  justify-content: space-around;
+  position: relative;
 
   background: rgba(66, 78, 89, 0.6);
   padding: 10px 10px 0 10px;
   border: 2px solid #424E59;
   border-radius: 6px;
+
+  display: flex;
+  justify-content: space-around;
 }
 .features li {
   text-decoration: none;
@@ -244,10 +243,8 @@ header {
 }
 .features li:last-child a {
   display: flex;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: -moz-box;
-
+  display: -webkit-flex; /* Safari */
+  -webkit-align-items: center; /* Safari 7.0+ */
   align-items: center;
   justify-content: center;
 }
@@ -258,11 +255,13 @@ header {
   margin-left: 15px;
 }
 .features-more {
+  position: absolute;
+
   display: flex;
+  display: -webkit-flex; /* Safari */
+  -webkit-align-self: flex-end; /* Safari 7.0+ */
   align-self: flex-end;
   justify-content: center;
-
-  position: absolute;
 }
 .features p {
   position: absolute;
@@ -294,6 +293,7 @@ header {
     right: 25px;
 
     flex-direction: column;
+    -webkit-flex-direction: column;
   }
   .features p {
     top: -0px;
@@ -302,7 +302,8 @@ header {
   }
   .features-more {
     align-self: center;
-    display: flex;
+    -webkit-align-self: center;
+    
     position: relative;
     margin-top: 12px;
   }
@@ -325,15 +326,15 @@ header {
 
   display: flex;
   display: -webkit-flex;
-  display: -ms-flexbox;
-  display: -moz-box;
   justify-content: center;
 }
 .footer div {
   display: inline-block;
   overflow: hidden;
   text-align: center;
+  
   align-self: center;
+  -webkit-align-self: center;
 }
 [class*="col-"] {
   float: left;

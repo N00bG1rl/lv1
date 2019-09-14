@@ -2,6 +2,9 @@
 
 body {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(36, 38, 37, .5)),  url("../images/contact/bg.png");
+  background-image: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(36, 38, 37, .5)), url("../images/contact/bg.png");
+  background-image: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(36, 38, 37, .5)), url("../images/contact/bg.png");
+  background-image: -o-linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(36, 38, 37, .5)), url("../images/contact/bg.png");
 }
 .main-content {
   max-width: 600px;
@@ -54,14 +57,12 @@ body {
   height: 340px;
   margin-top: 50px;
 
-  /* MAIN */
-  /* margin-bottom: 150px; */
-/*   position: relative;
+  position: relative;
   left: 50%;
   transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
-  -webkit-transform: translateX(-50%); */
+  -webkit-transform: translateX(-50%);
 }
 .form {
   width: 100%;

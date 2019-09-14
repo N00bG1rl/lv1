@@ -2,6 +2,9 @@
 
 body {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(36, 38, 37, .2)), url("../images/index/bg.png");
+  background-image: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(36, 38, 37, .2)), url("../images/index/bg.png");
+  background-image: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(36, 38, 37, .2)), url("../images/index/bg.png");
+  background-image: -o-linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(36, 38, 37, .2)), url("../images/index/bg.png");
 }
 .main {
   height: auto;
@@ -22,20 +25,27 @@ body {
   margin-top: 12px;
 
   transition: .5s;
+  -webkit-transition: .5s;
 }
 .imgRotate {
   transform: rotate(180deg);
+  /* IE 9 */
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
   transition: .5s;
+  -webkit-transition: .5s;
 }
 @media only screen and (min-width: 620px) {
   .main-content {
     width: 80%;
     margin-left: -2500px;
     transition: 1s;
+    -webkit-transition: 1s;
   }
   .main-content.open {
     margin-left: 0;
     transition: 1s;
+    -webkit-transition: 1s;
   }
   .handle-wrapper {
     position: absolute;
