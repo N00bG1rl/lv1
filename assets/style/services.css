@@ -186,11 +186,11 @@ body {
   position: absolute;
 }
 .left-icon {
-  background: url(../images/teenused/icons/back.png) no-repeat; 
+  background: url(../images/services/icons/back.png) no-repeat; 
   left: 0;
 }
 .right-icon {
-  background: url(../images/teenused/icons/forward.png) no-repeat;
+  background: url(../images/services/icons/forward.png) no-repeat;
   right: 0;
 }
 
