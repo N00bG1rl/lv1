@@ -1,7 +1,7 @@
 /* #MEIST */
 
 body {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba( 36, 38, 37, .8)),  url("../images/about/Rootsi_Sapa-1074.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba( 36, 38, 37, .8)),  url("../images/about/bg.jpg");
 }
 .info {
   width: 300px;

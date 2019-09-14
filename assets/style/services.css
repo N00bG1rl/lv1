@@ -1,7 +1,7 @@
 /* #TEENUSED */
 
 body {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(36, 38, 37, .4)), url("../images/teenused/teenused-bg.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(36, 38, 37, .4)), url("../images/services/images/teenused-bg.jpg");
 }
 .main-content {
   max-width: 1200px;

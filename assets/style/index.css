@@ -1,7 +1,7 @@
 /* #INDEX */
 
 body {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(36, 38, 37, .2)), url("../images/index/lvimg.png");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(36, 38, 37, .2)), url("../images/index/bg.png");
 }
 .main {
   height: auto;
