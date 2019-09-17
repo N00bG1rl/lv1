@@ -9,6 +9,7 @@ body {
 .filters-container {
   text-align: center;
   margin: 50px 0;
+  display: none;
 }
 .filters-container div {
   display: inline-block;
@@ -26,10 +27,33 @@ body {
   color: #EB5936;
   transition: all 0.1s ease-in-out;
   -webkit-transition: all 0.1s ease-in-out;
-} 
-/* @media only screen and (min-width: 620px) {
-  .cbp-item img {
-    width: 300px;
-    height: 250px;
+}
+.cbp-l-filters-dropdown-floated {
+  float: none;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+.cbp-l-filters-dropdownWrap {
+  background: rgba(66, 78, 89, 0.9);
+  border: 2px solid #424E59;
+  border-radius: 6px;
+}
+.cbp-l-filters-dropdown {
+  display: block;
+}
+.cbp-l-filters-dropdownWrap-open {
+  transition: all 0.1s ease-in-out;
+}
+
+@media only screen and (min-width: 620px) {
+  .cbp-l-filters-dropdown {
+    display: none;
   }
-} */
+  .filters-container {
+    display: block;
+  }
+}

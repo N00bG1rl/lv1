@@ -1,4 +1,3 @@
-
 // magnigic-popup Plugin
 $(document).ready(function() {
   $('.gallery').magnificPopup({
@@ -13,16 +12,13 @@ $(document).ready(function() {
   });
 });
 
-/* jQuery('#grid-container').cubeportfolio({
-  filters: '#filters-container', // you can even add multiple filters here (e.g. `filters: '#filters-container1, #filters-container2, #filters-container3'`)
-}); */
-
+/* cubeportfolio Plugin */
 (function($, window, document, undefined) {
   'use strict';
 
   // init cubeportfolio
   $('#js-grid-masonry').cubeportfolio({
-      filters: '#js-filters-masonry',
+      filters: '#js-filters-masonry, #js-filters-lightbox-gallery2',
       layoutMode: 'grid',
       defaultFilter: '*',
       animationType: 'quicksand',
@@ -40,12 +36,12 @@ $(document).ready(function() {
           cols: 3,
       }, {
           width: 480,
-          cols: 2,
+          cols: 1,
           options: {
               caption: '',
               gapHorizontal: 10,
               gapVertical: 10,
-          }
+          },   
       }],
       caption: 'overlayBottomAlong',
       displayType: 'bottomToTop',

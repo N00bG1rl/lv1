@@ -167,9 +167,41 @@ header {
   margin-left: 25px;
 }
 .close-icon {
-  float: right;
-  right: 20px;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  display: block;
+  outline: none;
+  padding: 0;
+  touch-action: manipulation;
+  
+  font-style: normal;
+  font-family: Arial, Baskerville, monospace;
+  text-decoration: none;
+  text-align: center;
+  opacity: 0.65;
+  font-size: 42px;
+  color: #FFF;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.69);
+  border-left: 2px solid rgba(255, 255, 255, 0.69);
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
 }
+.close-icon:hover {
+  /* color: #EB5936;
+  border-bottom: 2px solid rgba(235, 89, 54, 0.69);
+  border-left: 2px solid rgba(235, 89, 54, 0.69); */
+  opacity: 1;
+}
+
 @media only screen and (min-width: 768px) {
   .desktop-nav-wrapper {display: block;}
   .mobile-nav-wrapper {display: none;}
@@ -386,6 +418,6 @@ header {
   }
   .footer-info h3,
   .footer-info a {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
