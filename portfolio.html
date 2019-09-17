@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800&display=swap" rel="stylesheet">
-  
-    <link rel="stylesheet" href="assets/style/reset.css">
-    <link rel="stylesheet" href="assets/style/main.css">
-    <link rel="stylesheet" href="assets/style/portfolio.css">
-  
+
+      <!-- Reset stylesheet -->
+      <link rel="stylesheet" href="assets/style/reset.css">
+      <!-- Google fonts stylesheet -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800&display=swap">
+      <!-- Main stylesheet -->
+      <link rel="stylesheet" href="assets/style/main.css">
+      <!-- Custom stylesheet -->
+      <link rel="stylesheet" href="assets/style/portfolio.css">
+      <!-- magnific-popup stylesheet -->
+      <!-- <link rel="stylesheet" href="assets/style/magnific-popup.css"> -->
+      <!-- cubeportfolio css file -->
+     <!-- <link rel="stylesheet" href="assets/style/cubeportfolio.min.css"> -->
+      <link rel="stylesheet" href="assets/style/cubeportfolio.css">
+
     <title>LV Metall - Tehtud tööd</title>
   </head>
 <body>
@@ -61,57 +69,181 @@
     </div>
   </header>
 
-  <!-- Content info; tehtud-content = tehtud.css -->
-  <section class="container">
-    <div class="list-container">
-      <ul id="list-container">
-        <li class="list active" onclick="filterSelection('all')">Kōik</li>
-        <li class="list" onclick="filterSelection('aknad')">Aknad</li>
-        <li class="list" onclick="filterSelection('uksed')">Uksed</li>
-        <li class="list" onclick="filterSelection('all')">Vaheseinad</li>
-        <li class="list" onclick="filterSelection('all')">Talveaiad</li>
-        <li class="list" onclick="filterSelection('all')">Klaasfassaadid</li>
-        <!-- <li class="list" onclick="filterSelection('all')">Kōik</li>
-        <li class="list" onclick="filterSelection('all')">Kōik</li> -->
-      </ul>
+  <section class="container mrg-btm-150">
+    <div class="filters-container" id="js-filters-masonry">
+      <div class="cbp-filter-item cbp-filter-item-active" data-filter="*">Kōik</div> /
+      <div class="cbp-filter-item" data-filter=".door">Uksed</div> /
+      <div class="cbp-filter-item" data-filter=".window">Aknad</div> /
+      <div class="cbp-filter-item" data-filter=".wall">Vaheseinad</div> /
+      <div class="cbp-filter-item" data-filter=".facade">Fassaadid</div>
     </div>
-    <section class="grid-container">
-      <section class="grid-item aknad">
-        <img src="assets/images/portfolio/300x250.png" alt="klaasist siseuksed">
+
+    <section id="js-grid-masonry" class="cbp">
+      <section class="cbp-item wall">
+        <a href="assets/images/portfolio/full/1200x900.png" class="cbp-caption cbp-lightbox" data-title="Rootsi<br>Klaasist siseuksed">
+          <div class="cbp-caption-defaultWrap">
+            <img src="assets/images/portfolio/300x250.png" alt="Klaasist siseuksed">
+          </div>
+          <div class="cbp-caption-activeWrap">
+              <div class="cbp-l-caption-alignCenter">
+                  <div class="cbp-l-caption-body">
+                      <div class="cbp-l-caption-title">Rootsi</div>
+                      <div class="cbp-l-caption-desc">Klaasist siseuksed</div>
+                  </div>
+              </div>
+          </div>
+        </a>
       </section>
-      <section class="grid-item uksed">
-        <img src="assets/images/portfolio/300x250.png" alt="klaasist siseuksed">
+      <section class="cbp-item wall">
+        <a href="assets/images/portfolio/full/1200x900.png" class="cbp-caption cbp-lightbox" data-title="Rootsi<br>Klaasist siseuksed">
+          <div class="cbp-caption-defaultWrap">
+              <img src="assets/images/portfolio/300x250.png" alt="Klaasist siseuksed">
+          </div>
+          <div class="cbp-caption-activeWrap">
+              <div class="cbp-l-caption-alignCenter">
+                  <div class="cbp-l-caption-body">
+                      <div class="cbp-l-caption-title">Rootsi</div>
+                      <div class="cbp-l-caption-desc">Klaasist siseuksed</div>
+                  </div>
+              </div>
+          </div>
+        </a>
       </section>
-      <section class="grid-item uksed">
-        <img src="assets/images/portfolio/300x250.png" alt="klaasist siseuksed">
+      <section class="cbp-item door">
+        <a href="assets/images/portfolio/full/1200x900.png" class="cbp-caption cbp-lightbox" data-title="Rootsi<br>Klaasist siseuksed">
+            <div class="cbp-caption-defaultWrap">
+                <img src="assets/images/portfolio/thumb/300x250.png" alt="">
+            </div>
+            <div class="cbp-caption-activeWrap">
+                <div class="cbp-l-caption-alignCenter">
+                    <div class="cbp-l-caption-body">
+                      <div class="cbp-l-caption-title">Rootsi</div>
+                      <div class="cbp-l-caption-desc">Klaasist siseuksed</div>
+                    </div>
+                </div>
+            </div>
+        </a>
       </section>
-      <section class="grid-item uksed">
-        <img src="assets/images/portfolio/300x250.png" alt="klaasist siseuksed">
+      <section class="cbp-item door">
+        <a href="assets/images/portfolio/full/1200x900.png" class="cbp-caption cbp-lightbox" data-title="Rootsi<br>Klaasist siseuksed">
+            <div class="cbp-caption-defaultWrap">
+                <img src="assets/images/portfolio/thumb/300x250.png" alt="">
+            </div>
+            <div class="cbp-caption-activeWrap">
+                <div class="cbp-l-caption-alignCenter">
+                    <div class="cbp-l-caption-body">
+                      <div class="cbp-l-caption-title">Rootsi</div>
+                      <div class="cbp-l-caption-desc">Klaasist siseuksed</div>
+                    </div>
+                </div>
+            </div>
+        </a>
       </section>
-      <section class="grid-item uksed">
-        <img src="assets/images/portfolio/300x250.png" alt="klaasist siseuksed">
+      <section class="cbp-item door">
+        <a href="assets/images/portfolio/full/1200x900.png" class="cbp-caption cbp-lightbox" data-title="Rootsi<br>Klaasist siseuksed">
+            <div class="cbp-caption-defaultWrap">
+                <img src="assets/images/portfolio/thumb/300x250.png" alt="">
+            </div>
+            <div class="cbp-caption-activeWrap">
+                <div class="cbp-l-caption-alignCenter">
+                    <div class="cbp-l-caption-body">
+                      <div class="cbp-l-caption-title">Rootsi</div>
+                      <div class="cbp-l-caption-desc">Klaasist siseuksed</div>
+                    </div>
+                </div>
+            </div>
+        </a>
       </section>
-      <section class="grid-item aknad">
-        <img src="assets/images/portfolio/300x250.png" alt="klaasist siseuksed">
+      <section class="cbp-item window">
+        <a href="assets/images/portfolio/full/1200x900.png" class="cbp-caption cbp-lightbox" data-title="Rootsi<br>Klaasist siseuksed">
+            <div class="cbp-caption-defaultWrap">
+                <img src="assets/images/portfolio/thumb/300x250.png" alt="">
+            </div>
+            <div class="cbp-caption-activeWrap">
+                <div class="cbp-l-caption-alignCenter">
+                    <div class="cbp-l-caption-body">
+                      <div class="cbp-l-caption-title">Rootsi</div>
+                      <div class="cbp-l-caption-desc">Klaasist siseuksed</div>
+                    </div>
+                </div>
+            </div>
+        </a>
       </section>
-      <section class="grid-item uksed">
-        <img src="assets/images/portfolio/300x250.png" alt="klaasist siseuksed">
+      <section class="cbp-item window">
+        <a href="assets/images/portfolio/full/1200x900.png" class="cbp-caption cbp-lightbox" data-title="Rootsi<br>Klaasist siseuksed">
+            <div class="cbp-caption-defaultWrap">
+                <img src="assets/images/portfolio/thumb/300x250.png" alt="">
+            </div>
+            <div class="cbp-caption-activeWrap">
+                <div class="cbp-l-caption-alignCenter">
+                    <div class="cbp-l-caption-body">
+                      <div class="cbp-l-caption-title">Rootsi</div>
+                      <div class="cbp-l-caption-desc">Klaasist siseuksed</div>
+                    </div>
+                </div>
+            </div>
+        </a>
       </section>
-      <section class="grid-item">
-        <img src="assets/images/portfolio/300x250.png" alt="klaasist siseuksed">
+      <section class="cbp-item window">
+        <a href="assets/images/portfolio/full/1200x900.png" class="cbp-caption cbp-lightbox" data-title="Rootsi<br>Klaasist siseuksed">
+            <div class="cbp-caption-defaultWrap">
+                <img src="assets/images/portfolio/thumb/300x250.png" alt="">
+            </div>
+            <div class="cbp-caption-activeWrap">
+                <div class="cbp-l-caption-alignCenter">
+                    <div class="cbp-l-caption-body">
+                      <div class="cbp-l-caption-title">Rootsi</div>
+                      <div class="cbp-l-caption-desc">Klaasist siseuksed</div>
+                    </div>
+                </div>
+            </div>
+        </a>
       </section>
-      <section class="grid-item">
-        <img src="assets/images/portfolio/300x250.png" alt="klaasist siseuksed">
+      <section class="cbp-item facade">
+        <a href="assets/images/portfolio/full/1200x900.png" class="cbp-caption cbp-lightbox" data-title="Rootsi<br>Klaasist siseuksed">
+            <div class="cbp-caption-defaultWrap">
+                <img src="assets/images/portfolio/thumb/300x250.png" alt="">
+            </div>
+            <div class="cbp-caption-activeWrap">
+                <div class="cbp-l-caption-alignCenter">
+                    <div class="cbp-l-caption-body">
+                      <div class="cbp-l-caption-title">Rootsi</div>
+                      <div class="cbp-l-caption-desc">Klaasist siseuksed</div>
+                    </div>
+                </div>
+            </div>
+        </a>
       </section>
-      <section class="grid-item">
-        <img src="assets/images/portfolio/300x250.png" alt="klaasist siseuksed">
+      <section class="cbp-item facade">
+        <a href="assets/images/portfolio/full/1200x900.png" class="cbp-caption cbp-lightbox" data-title="Rootsi<br>Klaasist siseuksed">
+            <div class="cbp-caption-defaultWrap">
+                <img src="assets/images/portfolio/thumb/300x250.png" alt="">
+            </div>
+            <div class="cbp-caption-activeWrap">
+                <div class="cbp-l-caption-alignCenter">
+                    <div class="cbp-l-caption-body">
+                      <div class="cbp-l-caption-title">Rootsi</div>
+                      <div class="cbp-l-caption-desc">Klaasist siseuksed</div>
+                    </div>
+                </div>
+            </div>
+        </a>
       </section>
-      <section class="grid-item">
-        <img src="assets/images/portfolio/300x250.png" alt="klaasist siseuksed">
-      </section>
-      <section class="grid-item">
-        <img src="assets/images/portfolio/300x250.png" alt="klaasist siseuksed">
-      </section>
+      <section class="cbp-item window">
+        <a href="assets/images/portfolio/full/1200x900.png" class="cbp-caption cbp-lightbox" data-title="Rootsi<br>Klaasist siseuksed">
+            <div class="cbp-caption-defaultWrap">
+                <img src="assets/images/portfolio/thumb/300x250.png" alt="">
+            </div>
+            <div class="cbp-caption-activeWrap">
+                <div class="cbp-l-caption-alignCenter">
+                    <div class="cbp-l-caption-body">
+                      <div class="cbp-l-caption-title">Rootsi</div>
+                      <div class="cbp-l-caption-desc">Klaasist siseuksed</div>
+                    </div>
+                </div>
+            </div>
+        </a>
+      </section>   
     </section>
   </section>
 
@@ -136,10 +268,15 @@
       </a>
     </div>
   </section>
-  
+
+  <!-- jquery -->
+  <script src="assets/scripts/jquery-3.4.1.min.js"></script>
+  <!-- cubeportfolio jQuery plugin -->
+  <script type="text/javascript" src="assets/scripts/jquery.cubeportfolio.min.js"></script>
   <!-- Main script -->
   <script src="assets/scripts/main.js"></script>
   <!-- Custom script -->
   <script src="assets/scripts/portfolio.js"></script>
+  
 </body>
 </html>
