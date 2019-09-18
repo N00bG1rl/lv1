@@ -113,6 +113,8 @@ header {
 }
 
 /* Mobile toggle nav */
+/* html.noscroll html { overflow: hidden; } */
+
 .overlay {
   width: 0;
   height: 100%;
@@ -125,6 +127,17 @@ header {
   transition: .5s;
   -webkit-transition: .5s;
 }
+/* .show-overlay {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  background: #555;
+} */
+/* .show-overlay .overlay {
+  width: 100%;
+} */
+/* [aria-hidden="true"]  { display: none; }
+[aria-hidden="false"] { display: block; } */
 .overlay-nav {
   width: 200px;
   height: auto;
@@ -196,9 +209,6 @@ header {
   -webkit-transition: all 0.3s ease-in-out;
 }
 .close-icon:hover {
-  /* color: #EB5936;
-  border-bottom: 2px solid rgba(235, 89, 54, 0.69);
-  border-left: 2px solid rgba(235, 89, 54, 0.69); */
   opacity: 1;
 }
 
