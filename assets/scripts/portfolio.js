@@ -36,13 +36,17 @@ $(document).ready(function() {
           cols: 3,
       }, {
           width: 480,
-          cols: 1,
+          cols: 2,
           options: {
               caption: '',
               gapHorizontal: 10,
               gapVertical: 10,
           },   
-      }],
+      }, {
+          width: 360,
+          cols: 1
+      }
+    ],
       caption: 'overlayBottomAlong',
       displayType: 'bottomToTop',
       displayTypeSpeed: 100,

@@ -190,12 +190,12 @@ body {
 }
 .rslides_nav {
   z-index: 555;
-  width: 30px;
+  width: 40px;
   height: 50px;
   display: inline-block;
   background:rgba(0, 0, 0, .18);
   color:#eee;
-  opacity: .6;
+  opacity: .4;
 
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;

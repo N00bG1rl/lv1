@@ -88,20 +88,23 @@
   </section>
 
   <section class="container">
-    <div class="form-container transform50 mrg-btm-150">
-      <form class="form" action="" method="post">
-        <label for="field1">
-          <span>Sinu nimi</span><input type="text" name="field1" required="true" />
+    <div class="form-container mrg-btm-150">
+      <form class="form" action="send.php" method="post">
+        <label for="name">
+          <span>Sinu nimi</span><input type="text" name="name" required="true" class="form-control" />
         </label>
-        <label for="field2">
-          <span>Sinu e-posti aadress</span><input type="email" name="field2" required="true" />
+        <label for="email">
+          <span>Sinu e-posti aadress</span><input type="email" name="email" required="true" class="form-control" />
         </label>
-        <label for="field4">
-          <span>Sõnum</span><textarea name="field4" onkeyup="adjust_textarea(this)" required="true" spellcheck="false"></textarea>
+        <label for="message">
+          <span>Sõnum</span><textarea name="message" onkeyup="adjust_textarea(this)" required="true" spellcheck="false" class="form-control"></textarea>
         </label>
         <label class="submit-btn">
-          <span> </span><input type="submit" value="Saada" />
+          <span> </span><div type="submit" value="Saada" class="submit">Saada</div>
         </label>
+        <!--Contact form message-->
+        <div class="msg_success"><p>Sōnum on saadetud. Aitäh!</p></div>
+        <div class="msg_error"><p>Vabandust! Sōnumi saatmisel esines viga.</p></div>
       </form>
     </div>
   </section>
@@ -128,6 +131,9 @@
     </div>
   </section>
 
+  <!-- jquery script -->
+  <script src="assets/scripts/jquery-3.4.1.min.js"></script>
+  <!-- Main script -->
   <script src="assets/scripts/main.js"></script>
 </body>
 </html>

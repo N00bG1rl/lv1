@@ -125,8 +125,7 @@ label.submit-btn {
 .form input[type=email] :focus {
 	border-bottom: 1px dashed #5BD887;
 }
-.form input[type=submit],
-.form input[type=button] {
+.form .submit {
 	background: #314b60;
   border: none;
   width: 60px;
@@ -134,9 +133,22 @@ label.submit-btn {
 	border-radius: 5px;
 	color: #A8BACE;
 }
-.form input[type=submit]:hover,
-.form input[type=button]:hover {
+.form .submit:hover {
   background: #395870;
+}
+.msg_error {
+  color: red;
+}
+.msg_success {
+  color: green;
+}
+.msg_success,
+.msg_error {
+  display: none;
+  font-size: 12px;
+  padding-top: 15px;
+  position: absolute;
+  text-transform: capitalize;
 }
 
 @media only screen and (min-width: 650px) {
