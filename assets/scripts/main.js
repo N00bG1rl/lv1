@@ -7,6 +7,17 @@ function closeNav() {
   document.getElementById('mobile-nav').style.width = '0';
 }
 
+/* Index toggle content */
+function toggleContent() {
+  var mainContent = document.getElementById('main-content');
+  var rotate = document.getElementById('rightArrow');
+  let txtRotate = document.getElementById('txt-rotate');
+
+  mainContent.classList.toggle('open');
+  rotate.classList.toggle('imgRotate');
+  txtRotate.classList.toggle('txtNone');
+}
+
 /* function toggleMobilenav() {
   var mobileNav = document.getElementById('open');
   mobileNav.addClass('over');

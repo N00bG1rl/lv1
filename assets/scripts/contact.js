@@ -4,16 +4,6 @@ function adjust_textarea(h) {
   h.style.height = (h.scrollHeight)+"px";
 }
 
-function toggleContent() {
-  var mainContent = document.getElementById('main-content');
-  var rotate = document.getElementById('rightArrow');
-  let txtRotate = document.getElementById('txt-rotate');
-
-  mainContent.classList.toggle('open');
-  rotate.classList.toggle('imgRotate');
-  txtRotate.classList.toggle('txtNone');
-}
-
 // Contact form validation
 $(function () {
   $('.contact-form form .submit').on('click', function() {
