@@ -7,40 +7,40 @@ body {
   background-image: -o-linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(36, 38, 37, .5)), url("../images/contact/bg.png");
   background-position: left top;
 }
+/* HEADER */
 .main-content {
   max-width: 600px;
   padding: 25px;
 }
 .content-header {
   width: 100%;
-  min-height: 170px;
   height: auto;
+  min-height: 170px;
 }
 .content-header p {
   width: auto;
   max-width: 300px;
-  font-size: 15px;
   padding-left: 12px;
+  font: 400 15px "Open Sans", sans-serif;
+  line-height: 1.6;
 }
 .content-header h1 {
   font-size: 23px;
   font-weight: bold;
 }
 
+/* CONTACT CONTEINER */
 .contact-info-container {
-  /* height: 240px; */
   max-width: 650px;
   height: 650px;
+  margin-top: 50px;
 }
+
+/* Address info */
 .contact-info {
-  /* float: right; */
-  /* float: left; */
- /*  width: 150px; */
   width: 100%;
   height: 210px;
   margin: 12px 0;
-  /* min-height: 200px; */
-  /* position: relative; */
 }
 .contact-wrapper {
   float: right;
@@ -49,12 +49,13 @@ body {
 .contact-wrapper div {
   padding: 8px;
 }
-.contact-info h3 {
-  font-size: 12px;
-  text-transform: uppercase;
+.contact-wrapper h3 {
+  font: 400 12px "Open Sans", sans-serif;
   color: #F28B4F;
+  text-transform: uppercase;
 }
-.contact-info p {
+.contact-wrapper a,
+.contact-wrapper p {
   font-size: 12px;
 }
 .contact-info img {
@@ -63,6 +64,7 @@ body {
   top: -10px;
 }
 
+/* Form */
 .form-container {
   height: 340px;
   margin-top: 50px;
@@ -76,8 +78,8 @@ body {
 }
 .form {
   width: 100%;
-  height: 380px;
-	font-size: 16px;
+  height: 360px;
+	font: 400 15px "Open Sans", sans-serif;
 	background: rgba(0, 0, 0, .3);
   border: 1px solid #424E59;
   border-radius: 6px;
@@ -89,88 +91,87 @@ body {
 .form input[type=email],
 .form textarea,
 .form label {
-	font-family: Georgia, "Times New Roman", Times, serif;
+	font-family: "Helvetica", sans-serif;
 	font-size: 15px;
 	color: #fff;
 }
 .form label {
-	display:block;
-  margin-bottom: 12px;
-  
   height: 60px;
+	display: block;
+  margin-bottom: 12px;
 }
 .form label > span {
-	display: block;
-	float: left;
   width: 150px;
-/*   margin-bottom: 12px; */
+  float: left;
+  display: block;
+  opacity: .8;
 }
 .form input[type=text],
 .form input[type=email] {
 	background: transparent;
 	border: none;
-	border-bottom: 1px dashed #395870;
-	width: 100%;
+	border-bottom: 1px dashed #424E59;
 	outline: none;
   padding: 0;
-  
+  width: 100%;
   height: 40px;
 }
 label.message {
   height: 80px;
 }
 .form textarea {
-	padding: 0;
-	background: transparent;
-	outline: none;
-	border: none;
-	border-bottom: 1px dashed #395870;
   width: 100%;
   height: 80px;
+  padding: 0;
+  margin-top: 12px;
+	background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px dashed #424E59;
 	overflow: hidden;
-	resize:none;
-}
-label.submit-btn {
-  width: 80px;
-  display: inline-block;
-  margin-top: 50px;
+	resize: none;
 }
 .form textarea:focus, 
 .form input[type=text]:focus,
 .form input[type=email]:focus,
 .form input[type=email] :focus {
-	border-bottom: 1px dashed #5BD887;
+	border-bottom: 1px dashed #2A8C82;
 }
 .form .submit {
-	background: #314b60;
+	background: #395870;
+  background: linear-gradient(#475259, #5F6B72);
+  background: -webkit-linear-gradient(#475259, #5F6B72);
+  background: -moz-linear-gradient(#475259, #5F6B72);
+  background: -o-linear-gradient(#475259, #5F6B72);
+
+  width: 70px;
   border: none;
-  width: 60px;
-	padding: 8px 10px;
-	border-radius: 5px;
-	color: #A8BACE;
+  border-radius: 5px;
+  padding: 9px 13px;
+  margin-top: 50px;
+	color: #fff;
 }
 .form .submit:hover {
-  background: #395870;
+  background: #314b60;
+  box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, .3);
 }
 .msg_error {
-  color: red;
+  color: #F21515;
 }
 .msg_success {
-  color: green;
+  color: #2A8C82;
 }
 .msg_success,
 .msg_error {
-  display: none;
-  font-size: 12px;
-  padding-top: 15px;
   position: absolute;
+  display: none;
+  padding-top: 15px;
+  font: 400 12px "Open Sans", sans-serif;
   text-transform: capitalize;
 }
 
 @media only screen and (min-width: 750px) {
-  body {
-    background-position: center;
-  }
+  body {background-position: center;}
   .content-header {
     width: 350px;
   }
@@ -181,8 +182,6 @@ label.submit-btn {
     font-size: 30px;
   }
   .contact-info-container {
-   /*  width: 570px; */
-    /* margin: 0 auto; */
     height: 450px;
     margin: 100px auto;
   }
@@ -193,24 +192,10 @@ label.submit-btn {
   .contact-info h3 {
     margin-bottom: 5px;
   }
-/*   .form-container {
-    height: 250px;
-  } */
   .form {
     width: 400px;
     padding: 25px;
     float: right;
-  }
-
-  .form input[type=text],
-  .form input[type=email],
-  .form textarea {
-    width: 346px;
-  }
-
-  .contact-info {
-    /* left: 0;
-    transform: none; */
   }
 }
 

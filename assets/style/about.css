@@ -6,6 +6,8 @@ body {
   background-image: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(36, 38, 37, .5)), url("../images/about/bg.jpg");
   background-image: -o-linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(36, 38, 37, .5)), url("../images/about/bg.jpg");
 }
+
+/* INFO CONTAINER */
 .info {
   width: 300px;
 }
@@ -18,6 +20,8 @@ body {
   font-weight: bold;
 }
 .info-content p {
+  font: 400 15px "Open Sans", sans-serif;
+  line-height: 1.6;
   padding: 12px;
 }
 .info-content span {
@@ -38,6 +42,7 @@ body {
 span em {
   font-weight: bold;
 }
+
 @media only screen and (min-width: 650px) {
   .info-content span {
     display: block;

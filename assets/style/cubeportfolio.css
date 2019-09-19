@@ -2489,7 +2489,7 @@
 
 /* PREVIOUS BUTTON LIGHBOX */
 .cbp-popup-lightbox .cbp-popup-prev {
-  background: url("../images/portfolio/icons/cbp-sprite.png") no-repeat scroll 0 0 transparent;
+  background: url("../images/main/back.png") no-repeat;
   width: 44px;
   height: 44px;
   top: 0;
@@ -2497,38 +2497,38 @@
   left: 20px;
   margin: auto; }
 
-.cbp-popup-lightbox .cbp-popup-prev:hover {
-  background-position: 0 -46px; }
+/* .cbp-popup-lightbox .cbp-popup-prev:hover {
+  background-position: 0 -46px; } */
 
 /* PREVIOUS BUTTON SINGLEPAGE */
-.cbp-popup-singlePage .cbp-popup-prev {
-  background: url("../images/portfolio/icons/cbp-sprite.png") no-repeat scroll 0 -92px transparent;
+/* .cbp-popup-singlePage .cbp-popup-prev {
+  background: url("../images/main/forward.png") no-repeat;
   width: 44px;
   height: 44px;
   margin: auto;
   top: 0;
   right: 108px;
   bottom: 0;
-  left: 0; }
+  left: 0; } */
 
-.cbp-popup-singlePage .cbp-popup-prev:hover {
-  background-position: 0 -138px; }
+/* .cbp-popup-singlePage .cbp-popup-prev:hover {
+  background-position: 0 -138px; } */
 
 /* NEXT BUTTON LIGHTBOX */
 .cbp-popup-lightbox .cbp-popup-next {
-  background: url("../images/portfolio/icons/cbp-sprite.png") no-repeat scroll -46px 0 transparent;
+  background: url("../images/main/forward.png") no-repeat;
   width: 44px;
   height: 44px;
   top: 0;
   bottom: 0;
   right: 20px;
-  margin: auto; }
+  margin: auto;  }
 
-.cbp-popup-lightbox .cbp-popup-next:hover {
-  background-position: -46px -46px; }
+/* .cbp-popup-lightbox .cbp-popup-next:hover {
+  background-position: -46px -46px; } */
 
 /* NEXT BUTTON SINGLEPAGE */
-.cbp-popup-singlePage .cbp-popup-next {
+/* .cbp-popup-singlePage .cbp-popup-next {
   background: url("../images/portfolio/icons/cbp-sprite.png") no-repeat scroll -46px -92px transparent;
   width: 44px;
   height: 44px;
@@ -2536,21 +2536,21 @@
   top: 0;
   right: 0;
   bottom: 0;
-  left: 108px; }
+  left: 108px;  }*/
 
-.cbp-popup-singlePage .cbp-popup-next:hover {
-  background-position: -46px -138px; }
+/* .cbp-popup-singlePage .cbp-popup-next:hover {
+  background-position: -46px -138px; } */
 
 /* CLOSE BUTTON LIGTHBOX */
 .cbp-popup-lightbox .cbp-popup-close {
-  background: url("../images/portfolio/icons/cbp-sprite.png") no-repeat scroll -92px 0 transparent;
+  /* background: url("../images/portfolio/icons/cbp-sprite.png") no-repeat scroll -92px 0 transparent; */
   height: 40px;
   width: 40px;
   right: 20px;
-  top: 20px; }
+  top: 20px;  }
 
-.cbp-popup-lightbox .cbp-popup-close:hover {
-  background-position: -92px -46px; }
+/* .cbp-popup-lightbox .cbp-popup-close:hover {
+  background-position: -92px -46px; } */
 
 /* CLOSE BUTTON SINGLEPAGE */
 .cbp-popup-singlePage .cbp-popup-close {

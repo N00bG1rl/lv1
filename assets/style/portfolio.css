@@ -6,16 +6,17 @@ body {
   background-image: -o-linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(36, 38, 37, .3)), url("../images/portfolio/bg.jpg");
 }
 
+/* FILTERS CONTAINER */
 .filters-container {
   text-align: center;
   margin: 50px 0;
   display: none;
 }
 .filters-container div {
-  display: inline-block;
-  padding: 8px;
   text-transform: uppercase;
   font-size: 15px;
+  display: inline-block;
+  padding: 8px;
   cursor: pointer;
   transition: all 0.1s ease-in-out;
   -webkit-transition: all 0.1s ease-in-out;
@@ -30,6 +31,7 @@ body {
 }
 .cbp-l-filters-dropdown-floated {
   float: none;
+
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -40,6 +42,7 @@ body {
 .cbp-l-filters-dropdownWrap {
   height: 42px;
   transition: ease .5s;
+  -webkit-transition: ease .5s;
 
   background: rgba(66, 78, 89, 0.9);
   border: 2px solid #424E59;
@@ -48,18 +51,21 @@ body {
 .cbp-l-filters-dropdownWrap-open {
   height: 250px;
   transition: ease .5s;
+  -webkit-transition: ease .5s;
 }
 .cbp-l-filters-dropdownWrap .cbp-l-filters-dropdownList {
   height: 0px;
   visibility: hidden;
   opacity: 0;
   transition: ease .1s;
+  -webkit-transition: ease .1s;
 }
 .cbp-l-filters-dropdownWrap-open .cbp-l-filters-dropdownList {
   height: 210px;
   visibility: visible;
   opacity: 1;
   transition: ease .7s;
+  -webkit-transition: ease .7s;
 }
 .cbp-l-filters-dropdownList,
 .cbp-l-filters-dropdownWrap.cbp-l-filters-dropdownWrap-open .cbp-l-filters-dropdownList {
@@ -79,11 +85,77 @@ body {
 }
 .cbp-l-filters-dropdownList .cbp-filter-item {
   color: #fff;
-  font: 400 12px/40px "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  height: 40px;
 }
 .cbp-l-filters-dropdownList .cbp-filter-item-active {
   color: #EB5936;
 }
+
+/* GRID CONTAINER */
+.cbp-popup-navigation {
+  opacity: .5;
+}
+.cbp-popup-navigation {
+  opacity: 1;
+}
+.cbp-popup-lightbox .cbp-popup-prev,
+.cbp-popup-lightbox .cbp-popup-next {
+  width: 40px;
+  height: 50px;
+  color:#eee;
+  opacity: .4;
+
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+.cbp-popup-lightbox .cbp-popup-prev:hover,
+.cbp-popup-lightbox .cbp-popup-next:hover {
+  opacity: 1;
+}
+.cbp-popup-lightbox .cbp-popup-prev {
+  background: url("../images/main/back.png") no-repeat;
+}
+.cbp-popup-lightbox .cbp-popup-next {
+  background: url("../images/main/forward.png") no-repeat;
+}
+.cbp-popup-lightbox .cbp-popup-close {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  display: block;
+  outline: none;
+  padding: 0;
+  touch-action: manipulation;
+  
+  font-style: normal;
+  font-family: Arial, monospace;
+  text-decoration: none;
+  text-align: center;
+  opacity: .65;
+  font-size: 42px;
+  color: #FFF;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.69);
+  border-left: 2px solid rgba(255, 255, 255, 0.69);
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+.cbp-popup-lightbox .cbp-popup-close:hover {
+  opacity: 1;
+}
+.cbp-popup-lightbox .cbp-popup-close::after {
+  content: "×";
+}
+
 @media only screen and (min-width: 620px) {
   .cbp-l-filters-dropdown {
     display: none;

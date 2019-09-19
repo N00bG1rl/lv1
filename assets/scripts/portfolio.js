@@ -1,5 +1,5 @@
 // magnigic-popup Plugin
-$(document).ready(function() {
+/* $(document).ready(function() {
   $('.gallery').magnificPopup({
     type: 'image',
     gallery: {
@@ -10,7 +10,7 @@ $(document).ready(function() {
       tCounter: '<span class="mfp-counter">%curr% of %total%</span>'
     },
   });
-});
+}); */
 
 /* cubeportfolio Plugin */
 (function($, window, document, undefined) {
