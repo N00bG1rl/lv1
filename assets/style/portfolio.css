@@ -1,9 +1,9 @@
 /* #TEHTUD */
 body {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba( 36, 38, 37, .8)),  url("../images/portfolio/bg.jpg");
-  background-image: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(36, 38, 37, .8)), url("../images/portfolio/bg.jpg");
-  background-image: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(36, 38, 37, .8)), url("../images/portfolio/bg.jpg");
-  background-image: -o-linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(36, 38, 37, .8)), url("../images/portfolio/bg.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba( 36, 38, 37, .3)),  url("../images/portfolio/bg.jpg");
+  background-image: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(36, 38, 37, .3)), url("../images/portfolio/bg.jpg");
+  background-image: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(36, 38, 37, .3)), url("../images/portfolio/bg.jpg");
+  background-image: -o-linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(36, 38, 37, .3)), url("../images/portfolio/bg.jpg");
 }
 
 .filters-container {
@@ -38,17 +38,52 @@ body {
   -webkit-transform: translateX(-50%);
 }
 .cbp-l-filters-dropdownWrap {
+  height: 42px;
+  transition: ease .5s;
+
   background: rgba(66, 78, 89, 0.9);
   border: 2px solid #424E59;
   border-radius: 6px;
 }
+.cbp-l-filters-dropdownWrap-open {
+  height: 250px;
+  transition: ease .5s;
+}
+.cbp-l-filters-dropdownWrap .cbp-l-filters-dropdownList {
+  height: 0px;
+  visibility: hidden;
+  opacity: 0;
+  transition: ease .1s;
+}
+.cbp-l-filters-dropdownWrap-open .cbp-l-filters-dropdownList {
+  height: 210px;
+  visibility: visible;
+  opacity: 1;
+  transition: ease .7s;
+}
+.cbp-l-filters-dropdownList,
+.cbp-l-filters-dropdownWrap.cbp-l-filters-dropdownWrap-open .cbp-l-filters-dropdownList {
+  display: block;
+}
 .cbp-l-filters-dropdown {
   display: block;
 }
-.cbp-l-filters-dropdownWrap-open {
-  transition: all 0.1s ease-in-out;
+.cbp-l-filters-dropdownHeader {
+  color: #EB5936;
 }
-
+.cbp-l-filters-dropdownHeader::after {
+  border-color: #EB5936 rgba(0, 0, 0, 0);
+}
+.cbp-l-filters-dropdownList .cbp-filter-item {
+  border: none;
+}
+.cbp-l-filters-dropdownList .cbp-filter-item {
+  color: #fff;
+  font: 400 12px/40px "Open Sans", sans-serif;
+}
+.cbp-l-filters-dropdownList .cbp-filter-item-active {
+  color: #EB5936;
+}
 @media only screen and (min-width: 620px) {
   .cbp-l-filters-dropdown {
     display: none;

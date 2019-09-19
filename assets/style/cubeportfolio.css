@@ -872,7 +872,8 @@
   width: 200px;
   position: absolute;
   right: 0;
-  background: #4d4c4d; }
+  background: #4d4c4d;
+}
 
 .cbp-l-filters-dropdownHeader {
   font: 400 12px/38px "Open Sans", sans-serif;
@@ -894,7 +895,8 @@
   margin-top: -1px; }
 
 .cbp-l-filters-dropdownWrap.cbp-l-filters-dropdownWrap-open .cbp-l-filters-dropdownHeader:after {
-  border-width: 0 5px 5px; }
+  border-width: 0 5px 5px;
+}
 
 .cbp-l-filters-dropdownList {
   display: none;

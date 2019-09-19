@@ -44,7 +44,12 @@ $(document).ready(function() {
           },   
       }, {
           width: 360,
-          cols: 1
+          cols: 1,
+          options: {
+            caption: '',
+            gapHorizontal: 10,
+            gapVertical: 10,
+          },
       }
     ],
       caption: 'overlayBottomAlong',
