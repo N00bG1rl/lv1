@@ -63,16 +63,16 @@ header.logo-img, .rotate, .info-content span,
   }
 }
 
-/* Top navigation */
 header {
   height: 150px;
 }
 .logo-img {
   float: right;
-  width: 200px;
-  height: 152px;
-  margin: -15px;
+  width: 170px;
+  height: 132px;
+  margin: -10px;
 }
+/* Top navigation */
 .desktop-nav-wrapper {
   display: none;
   float: left;
@@ -111,11 +111,8 @@ header {
   border-left: none;
   border-radius: 0 4px 4px 0;
 }
-
-/* Mobile toggle nav */
-/* html.noscroll html { overflow: hidden; } */
-
-.overlay {
+/* Mobile/max-width:620 nav overlay */
+.mobile-nav {
   width: 0;
   height: 100%;
   position: fixed;
@@ -123,21 +120,17 @@ header {
   top: 0; bottom: 0;
   z-index: 9;
   overflow-x: hidden;
+
   background: rgba(66, 78, 89, 1);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(36, 38, 37, .2));
+  background-image: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(36, 38, 37, .2));
+  background-image: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(36, 38, 37, .2));
+  background-image: -o-linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(36, 38, 37, .2)), url;
+
   transition: .5s;
   -webkit-transition: .5s;
 }
-/* .show-overlay {
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  background: #555;
-} */
-/* .show-overlay .overlay {
-  width: 100%;
-} */
-/* [aria-hidden="true"]  { display: none; }
-[aria-hidden="false"] { display: block; } */
+
 .overlay-nav {
   width: 200px;
   height: auto;
@@ -199,7 +192,7 @@ header {
   font-family: Arial, Baskerville, monospace;
   text-decoration: none;
   text-align: center;
-  opacity: 0.65;
+  opacity: 1;
   font-size: 42px;
   color: #FFF;
   border-bottom: 2px solid rgba(255, 255, 255, 0.69);
@@ -211,10 +204,17 @@ header {
 .close-icon:hover {
   opacity: 1;
 }
-
+@media only screen and (min-width: 400px) {
+  .logo-img {
+    width: 200px;
+    height: 152px;
+    margin: -15px;
+  }
+}
 @media only screen and (min-width: 768px) {
   .desktop-nav-wrapper {display: block;}
   .mobile-nav-wrapper {display: none;}
+  .close-icon {opacity: .65;}
 }
 
 /* Content info */
@@ -316,7 +316,7 @@ header {
 
 @media only screen and (min-width: 400px) {
   .features {
-    height: 210px;
+    height: 220px;
   }
   .features li {
     font-size: 20px;

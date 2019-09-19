@@ -49,7 +49,7 @@
           style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><g id="surface1"><path d="M0,25.8v17.2h172v-17.2zM0,77.4v17.2h172v-17.2zM0,129v17.2h172v-17.2z"></path></g></g></g>
         </svg>
       </div>
-      <div id="mobile-nav" class="overlay">
+      <div id="mobile-nav" class="mobile-nav">
         <button class="close-icon" onclick="closeNav()">×</button><!-- " -->
         <nav class="overlay-nav">
           <ul>
@@ -94,10 +94,10 @@
     <!-- <div class="map col-2-3">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2088.6751381232684!2d24.495277716188124!3d58.432592781354074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ece2a2148e08af%3A0x7ce64063a4c66b4!2sLV+Metall+O%C3%9C!5e0!3m2!1set!2see!4v1565686256454!5m2!1set!2see" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div> -->
-  </section>
+  <!-- </section>
 
-  <section class="container">
-    <div class="form-container mrg-btm-150">
+  <section class="container"> -->
+    <!-- <div class="form-container mrg-btm-150"> -->
       <form class="form" action="send.php" method="post">
         <label for="name">
           <span>Sinu nimi</span><input type="text" name="name" required="true" class="form-control" />
@@ -105,7 +105,7 @@
         <label for="email">
           <span>Sinu e-posti aadress</span><input type="email" name="email" required="true" class="form-control" />
         </label>
-        <label for="message">
+        <label for="message" class="message">
           <span>Teade</span><textarea name="message" onkeyup="adjust_textarea(this)" required="true" spellcheck="false" class="form-control"></textarea>
         </label>
         <label class="submit-btn">
@@ -115,7 +115,7 @@
         <div class="msg_success"><p>Sōnum on saadetud. Aitäh!</p></div>
         <div class="msg_error"><p>Vabandust! Sōnumi saatmisel esines viga.</p></div>
       </form>
-    </div>
+    <!-- </div> -->
   </section>
 
   <!--Footer contact info-->
