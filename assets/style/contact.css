@@ -31,7 +31,7 @@ body {
 
 /* CONTACT CONTEINER */
 .contact-info-container {
-  max-width: 650px;
+  max-width: 850px;
   height: 650px;
   margin-top: 50px;
 }
@@ -193,7 +193,7 @@ label.message {
     margin-bottom: 5px;
   }
   .form {
-    width: 400px;
+    width: 500px;
     padding: 25px;
     float: right;
   }
