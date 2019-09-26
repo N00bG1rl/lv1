@@ -131,15 +131,8 @@ header {
 
 .overlay-nav {
   width: 200px;
-  height: auto;
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  height: 360px;
+  margin: 8em auto;
 }
 .overlay-nav ul {
   text-align: center;
