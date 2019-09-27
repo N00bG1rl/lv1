@@ -52,13 +52,12 @@ body {
   position: relative;
   text-align: center;
   color: #fff;
-  background: rgba(66, 78, 89, 0.9);
+  background: rgba(66, 78, 89, 0.5);
   border: 2px solid #424E59;
   border-radius: 6px;
 }
 .hover-item {
-  background-color: rgba(66, 78, 89, 0.9);
-  border: 2px solid #424E59;
+  background-color: rgba(66, 78, 89, 0.5);
   border-radius: 6px;
 
   position: absolute;
