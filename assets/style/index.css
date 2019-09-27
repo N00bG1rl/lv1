@@ -43,7 +43,7 @@ body {
   -webkit-transition: .5s;
 }
 
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 768px) {
   .main-content {
     width: 80%;
     margin-left: -2500px;

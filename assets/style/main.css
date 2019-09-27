@@ -235,7 +235,7 @@ header {
 .main-content span a:hover {
   color: #fff;
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 768px) {
   .main-content p {
     font-size: 15px;
   }
@@ -249,6 +249,7 @@ header {
 /* FEATURES */
 .features {
   margin-top: 200px;
+  margin-bottom: 150px;
   height: 190px;
   position: relative;
 
@@ -302,7 +303,7 @@ header {
     font-size: 20px;
   }
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 768px) {
   .features {
     position: absolute;
     float: right;
@@ -397,7 +398,7 @@ header {
 .footer-media img:first-child {
   padding-right: 20px;
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 768px) {
   .footer {
     width: 380px;
     margin: 25px;
