@@ -12,6 +12,9 @@ body {
   height: auto;
 }
 .main-content {
+  background: rgba(66, 78, 89, 0.6);
+  border: 2px solid #424E59;
+  border-radius: 6px;
   position: relative;
   height: auto;
 }

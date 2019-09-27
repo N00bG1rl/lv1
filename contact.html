@@ -101,13 +101,13 @@
     <section class="container">
       <form class="form" action="send.php" method="post">
         <label for="name">
-          <span>Sinu nimi</span><input type="text" name="name" required="true" class="form-control" />
+          <span>Sinu nimi</span><input type="text" name="name" required="true" autocorrect="off" autocapitalize="off" class="form-control" />
         </label>
         <label for="email">
-          <span>Sinu e-posti aadress</span><input type="email" name="email" required="true" class="form-control" />
+          <span>Sinu e-posti aadress</span><input type="email" name="email" required="true" autocorrect="off" autocapitalize="off" class="form-control" />
         </label>
         <label for="message" class="message">
-          <span>Teade</span><textarea name="message" onkeyup="adjust_textarea(this)" required="true" spellcheck="false" class="form-control"></textarea>
+          <span>Teade</span><textarea name="message" onkeyup="adjust_textarea(this)" required="true" spellcheck="false" autocorrect="off" autocapitalize="off" class="form-control"></textarea>
         </label>
         <label class="submit-btn">
           <span> </span><div type="submit" value="Saada" class="submit">Saada</div>

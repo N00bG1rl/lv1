@@ -83,7 +83,7 @@ body {
 	background: rgba(0, 0, 0, .3);
   border: 1px solid #424E59;
   border-radius: 6px;
-	padding: 12px;
+  padding: 12px;
 }
 .form input[type=submit],
 .form input[type=button],

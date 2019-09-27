@@ -10,9 +10,9 @@ body {
 /* HEADER */
 .main-content {
   max-width: 1200px;
-  width: 80%;
+  width: 100%;
   display: block;
-  padding: 25px 12px;
+  padding: 25px;
 }
 .content-header {
   padding-bottom: 25px;
@@ -266,6 +266,13 @@ body {
 }
 
 @media only screen and (min-width: 620px) {
+  .main-content {
+    width: 80%;
+    background: rgba(66, 78, 89, 0.6);
+    border: 2px solid #424E59;
+    border-radius: 6px;
+    padding: 25px 12px;
+  }
   .main-content p {
     text-align: center;
   }
