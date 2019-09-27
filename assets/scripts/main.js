@@ -17,7 +17,7 @@ $(function() {
 
 /* Re-enable the scroll */
 $(function() {
-  $('.close-icon').click(function() {
+  $('#close-icon').click(function() {
     $('html')
       .css('overflow-y', 'visible');
   });
