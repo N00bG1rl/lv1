@@ -48,7 +48,7 @@ body {
   width: 100%;
   min-width: 200px;
   max-width: 1200px;
-  margin: 25px;
+  margin: 25px 0;
   position: relative;
   text-align: center;
   color: #fff;
@@ -266,6 +266,9 @@ body {
   }
   .content-header div {
     padding: 0 25px;
+  }
+  .grid-item {
+    margin: 25px;
   }
   .grid-item h3 {
     font-size: 15px;

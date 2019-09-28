@@ -20,9 +20,12 @@ html {
 }
 body {
   overflow: visible;
+  -webkit-overflow-scrolling: touch;
+  -webkit-touch-overflow: scroll;
   font: 400 15px "Open Sans", sans-serif;
   font-size: 15px;
   line-height: 1.6;
+  word-break: break-word;
   color: #fff;
   -moz-osx-font-smoothing: grayscale;
   word-wrap: wrap;
