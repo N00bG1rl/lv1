@@ -213,7 +213,7 @@ header {
 /* Content info */
 .main-content {
   color: #fff;
-  font: 400 12px "Open Sans", sans-serif;
+  font: 400 15px "Open Sans", sans-serif;
   line-height: 1.6;
   padding: 25px 0;
 
@@ -225,8 +225,8 @@ header {
   -webkit-transform: translateX(-50%);
 }
 .main-content p {
-  font: 400 12px "Open Sans", sans-serif;
-  line-height: 1.6;
+  font: 400 15px "Open Sans", sans-serif;
+  line-height: 1.6em;
   text-align: center;
   padding: 5px;
 }

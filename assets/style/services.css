@@ -1,10 +1,10 @@
 /* #TEENUSED */
 
 body {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(36, 38, 37, .4)), url("../images/services/images/teenused-bg.jpg");
-  background-image: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(36, 38, 37, .4)), url("../images/services/images/teenused-bg.jpg");
-  background-image: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(36, 38, 37, .4)), url("../images/services/images/teenused-bg.jpg");
-  background-image: -o-linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(36, 38, 37, .4)), url("../images/services/images/teenused-bg.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(36, 38, 37, .9)), url("../images/services/images/teenused-bg.jpg");
+  background-image: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(36, 38, 37, .9)), url("../images/services/images/teenused-bg.jpg");
+  background-image: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(36, 38, 37, .9)), url("../images/services/images/teenused-bg.jpg");
+  background-image: -o-linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(36, 38, 37, .9)), url("../images/services/images/teenused-bg.jpg");
 }
 
 /* HEADER */
@@ -20,6 +20,9 @@ body {
 }
 .content-header div {
   padding: 0;
+}
+.content-header p {
+  text-align: left;
 }
 .content-header p em {
   text-transform: uppercase;
@@ -57,13 +60,10 @@ body {
   border-radius: 6px;
 }
 .hover-item {
-  background-color: rgba(66, 78, 89, 0.5);
   border-radius: 6px;
-
   position: absolute;
   height: 50px;
   width: 100%;
-  
   transition: .5s ease;
   -webkit-transition: .5s ease;
 }
@@ -88,7 +88,7 @@ body {
   width: 100%;
   max-width: 385px;
   height: auto;
-  padding: 12px;
+  /* padding: 12px; */
   margin-top: 50px;
 }
 .grid-item h3 {
@@ -105,7 +105,7 @@ body {
 /* POPUP CONTENT / Details */
 .slider_popup {
   width: 100%;
-  max-width: 500px;
+  max-width: 1200px;
   min-height: 400px;
   margin: 50px auto;
   padding: 25px;
@@ -117,26 +117,33 @@ body {
   border: 4px solid #424E59;
   border-radius: 6px;
   padding: 25px;
+  display: block;
 }
 .popup-img,
 .popup-info {
   width: 100%;
-}
-.popup-img,
-.popup-info {
-  margin-top: 25px;
+  /* align-self: center;
+  text-align: center; */
   position: relative;
 }
+.popup-img {
+  margin-top: 25px;
+}
+.popup-info {
+  padding: 25px;
+  margin: 0 auto;
+  display: block;
+}
 .popup-info h3 {
-  padding: 12px;
+  padding-bottom: 12px;
   font: 400 15px "Open Sans", sans-serif;
-  text-align: center;
   text-transform: uppercase;
+  text-align: center;
 }
 .popup-info p {
-  font: 400 12px "Open Sans", sans-serif;
+  font: 400 15px "Open Sans", sans-serif;
   line-height: 1.6;
-  text-align: center;
+  /* text-align: center; */
 }
 /* Popup close btn */
 .my-mfp-zoom-in button.mfp-close,
@@ -184,9 +191,9 @@ body {
 .rslides_nav {
   width: 40px;
   height: 50px;
-  background:rgba(0, 0, 0, .5);
+  background:rgba(235, 89, 54, .5);
   color:#eee;
-  opacity: .4;
+  opacity: 0;
   display: inline-block;
   z-index: 555;
 
@@ -200,14 +207,20 @@ body {
   -ms-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
 }
-.rslides_nav:hover {
+.popup-img:hover .rslides_nav {
   opacity: 1;
 }
 .rslides_nav.prev {
   left: 0;
+  border-radius: 0 3px 3px 0;
 }
 .rslides_nav.next {
   right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.rslides_nav.prev:hover,
+.rslides_nav.next:hover {
+  background: transparent;
 }
 .icon {
   width: 25px;
@@ -248,12 +261,24 @@ body {
 .partners img {
   padding: 13px;
   width: 200px;
+  filter: grayscale(0%);
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+.partners img:hover {
+  filter: grayscale(90%);
 }
 .white-bg {
   background: #fff;
 }
 
 @media only screen and (min-width: 768px) {
+  body {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(36, 38, 37, .4)), url("../images/services/images/teenused-bg.jpg");
+    background-image: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(36, 38, 37, .4)), url("../images/services/images/teenused-bg.jpg");
+    background-image: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(36, 38, 37, .4)), url("../images/services/images/teenused-bg.jpg");
+    background-image: -o-linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(36, 38, 37, .4)), url("../images/services/images/teenused-bg.jpg");
+  }
   .main-content {
     width: 80%;
     background: rgba(66, 78, 89, 0.6);
@@ -281,11 +306,33 @@ body {
     transition: .5s ease;
     -webkit-transition: .5s ease;
   }
+  .hover-item {
+    background-color: rgba(66, 78, 89, 0.5);
+  }
+  .popup-item {
+    display: flex;
+  }
   .grid-item p {
     margin: 25px;
   }
+  .popup-img,
+  .popup-info {
+    width: 50%;
+    align-self: center;
+    text-align: left;
+  } 
+  .popup-info h3,
+  .popup-info p {
+    text-align: left;
+  }
+  .popup-info {
+    max-width: 400px;
+  }
   .popup-info p {
     font-size: 15px;
+  }
+  .popup-img {
+    margin: 0;
   }
   .partners-header-txt {
     font-size: 20px;
