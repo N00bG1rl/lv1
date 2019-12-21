@@ -78,7 +78,8 @@ body {
     font-family: "Open Sans", sans-serif;
   }
   .txtRotate {
-    transition: all 0.9s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
     transform: rotate(-90deg); 
     /* Safari */
     -webkit-transform: rotate(-90deg);
@@ -93,6 +94,9 @@ body {
   }
   .handle-wrapper p {
     padding: 12px;
+  }
+  .handle-wrapper:hover p {
+    color: #EB5936;
   }
   .txtNone {
     display: none;
