@@ -86,9 +86,8 @@ body {
 }
 .grid-item .img-item a img {
   width: 100%;
-  max-width: 385px;
+  max-width: 450px;
   height: auto;
-  /* padding: 12px; */
   margin-top: 50px;
 }
 .grid-item h3 {
