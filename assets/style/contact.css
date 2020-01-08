@@ -51,7 +51,7 @@ body {
 }
 .contact-wrapper h3 {
   font: 400 12px "Open Sans", sans-serif;
-  color: #F28B4F;
+  color: #EB5936;
   text-transform: uppercase;
 }
 .contact-wrapper a,
@@ -196,6 +196,10 @@ label.message {
     width: 500px;
     padding: 25px;
     float: right;
+  }
+  .tel a:hover,
+  .e-mail a:hover {
+    color: #EB5936;
   }
 }
 
