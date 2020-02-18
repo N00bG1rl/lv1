@@ -1,5 +1,3 @@
-/* #TEENUSED */
-
 body {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(36, 38, 37, .9)), url("../images/services/images/teenused-bg.jpg");
   background-image: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(36, 38, 37, .9)), url("../images/services/images/teenused-bg.jpg");
@@ -31,7 +29,6 @@ body {
 /* GRID */
 .grid-container {
   padding: 12px 0;
-  border-bottom: 2px solid #424E59;
 
   display: flex;
   display: -webkit-flex;
@@ -121,8 +118,6 @@ body {
 .popup-img,
 .popup-info {
   width: 100%;
-  /* align-self: center;
-  text-align: center; */
   position: relative;
 }
 .popup-img {
@@ -142,7 +137,6 @@ body {
 .popup-info p {
   font: 400 15px "Open Sans", sans-serif;
   line-height: 1.6;
-  /* text-align: center; */
 }
 /* Popup close btn */
 .my-mfp-zoom-in button.mfp-close,
@@ -208,6 +202,9 @@ body {
   -ms-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
 }
+.popup-img:hover .rslides_nav {
+  opacity: 1;
+}
 .rslides_nav.prev {
   left: 0;
   border-radius: 0 3px 3px 0;
@@ -215,6 +212,10 @@ body {
 .rslides_nav.next {
   right: 0;
   border-radius: 3px 0 0 3px;
+}
+.rslides_nav.prev:hover,
+.rslides_nav.next:hover {
+  background:rgba(235, 89, 54, 1);
 }
 .icon {
   width: 25px;
@@ -229,41 +230,6 @@ body {
 .right-icon {
   background: url(../images/services/icons/forward.png) no-repeat;
   right: 0;
-}
-
-/* PARTNERS */
-.partners {
-  padding: 0 25px;
-  margin-bottom: 12px;
-  
-  display: flex;
-  display: -webkit-flex;
-  flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  -webkit-align-items: center;
-}
-.partners-header-txt {
-  position: relative;
-  padding: 25px;
-  text-align: center;
-  font: 400 15px "Open Sans", sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-.partners img {
-  padding: 13px;
-  width: 200px;
-  filter: grayscale(0%);
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-}
-.partners img:hover {
-  filter: grayscale(90%);
-}
-.white-bg {
-  background: #fff;
 }
 
 @media only screen and (min-width: 768px) {
@@ -329,23 +295,10 @@ body {
     margin: 0;
     width: 60%;
   }
-  .partners-header-txt {
-    font-size: 20px;
-  }
-  .partners img {
-    width: auto;
-  }
 }
 @media only screen and (min-width: 992px) {
   .grid-item {
     width: 43%;
-  }
-  .popup-img:hover .rslides_nav {
-    opacity: 1;
-  }
-  .rslides_nav.prev:hover,
-  .rslides_nav.next:hover {
-    background:rgba(235, 89, 54, 1);
   }
 }
 @media only screen and (max-height: 400px) {
