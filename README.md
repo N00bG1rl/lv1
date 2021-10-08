@@ -1,14 +1,20 @@
 # First full website
 
-## Project is created with
+I made this for local glass manufacturer company.
+
+# Created at
+
+February 7, 2018
+
+# Project is created with
+
 * JavaScript
 * jQuery
 * HTML
 * CSS
 
-## Created at
-Okt 22, 2019
+# View on browser
+## [https://n00bg1rl.github.io/lv1/](https://n00bg1rl.github.io/lv1/)
 
-## [View on browser](https://n00bg1rl.github.io/lv1/)
-
+# View as image
 ![github](./assets/images/github.png)
